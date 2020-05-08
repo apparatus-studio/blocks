@@ -1,0 +1,27 @@
+{
+  "name": "@apparatus/blocks-types-theme",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-atoms-background": "^0.0.0",
+    "@apparatus/blocks-atoms-border": "^0.0.0",
+    "@apparatus/blocks-atoms-footprint": "^0.0.0",
+    "@apparatus/blocks-atoms-icon": "^0.0.0",
+    "@apparatus/blocks-atoms-input": "^0.0.0",
+    "@apparatus/blocks-atoms-spacer": "^0.0.0",
+    "@apparatus/blocks-atoms-text": "^0.0.0",
+    "@themeables/background": "^2.0.0",
+    "@themeables/border": "^2.0.0",
+    "@themeables/spacer": "^0.2.0",
+    "@themeables/text": "^2.0.0",
+    "@themeables/vector-shape": "^2.0.0"
+  },
+  "sideEffects": false
+}
