@@ -4,6 +4,7 @@ import { View } from '@primitives/view'
 import { TThemeableSpacer } from '@themeables/spacer'
 import { createThemeableSpacer } from '@apparatus/blocks-contexts-theme'
 import { ContextDebug } from '@apparatus/blocks-contexts-debug'
+import { ContextInterface } from '@apparatus/blocks-contexts-interface'
 
 export type TAtomSpacer = {
   multiplier: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
@@ -25,4 +26,9 @@ export const Spacer = component(
   />
 ))
 
-export const AtomSpacer = createThemeableSpacer<TThemeableSpacer>('Spacer', Spacer)
+export const AtomSpacer = component(
+  startWithType<TAtomSpacer>(),
+  mapContext(ContextInterface)
+)(
+  createThemeableSpacer<TThemeableSpacer>('Spacer', Spacer)
+)

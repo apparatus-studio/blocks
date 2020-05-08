@@ -1,9 +1,10 @@
 import React, { FC } from 'react'
-import { TMapFocused } from 'refun'
+import { TMapFocused, startWithType, mapContext, component } from 'refun'
 import { Input } from '@primitives/input'
 import { TThemeableSpacer } from '@themeables/spacer'
 import { TThemeableText } from '@themeables/text'
 import { createThemeableSpacer, createThemeableText } from '@apparatus/blocks-contexts-theme'
+import { ContextInterface } from '@apparatus/blocks-contexts-interface'
 
 export type TAtomInput = {
   value: string,
@@ -48,12 +49,15 @@ const Inner: FC<TInner> = ({
   />
 )
 
-export const AtomInput = createThemeableSpacer<TThemeableSpacer>(
+export const AtomInput = component(
+  startWithType<TAtomInput>(),
+  mapContext(ContextInterface)
+)(createThemeableSpacer<TThemeableSpacer>(
   'Spacer_Input',
   createThemeableText<TThemeableText>(
     'Text_Input',
     Inner
   )
-)
+))
 
 AtomInput.displayName = 'AtomInput'

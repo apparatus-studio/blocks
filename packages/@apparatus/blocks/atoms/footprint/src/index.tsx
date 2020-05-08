@@ -1,8 +1,10 @@
 import React, { FC, ReactNode } from 'react'
+import { startWithType, mapContext, component } from 'refun'
 import { View } from '@primitives/view'
 import { TThemeableSpacer } from '@themeables/spacer'
 import { TTextLevel } from '@apparatus/blocks-particles-text-levels'
 import { createThemeableSpacer } from '@apparatus/blocks-contexts-theme'
+import { ContextInterface } from '@apparatus/blocks-contexts-interface'
 
 export type TAtomFootprint = {
   level: TTextLevel,
@@ -30,6 +32,14 @@ const Footprint: FC<TFootprint> = ({ blockStart, blockEnd, children }) => (
   </View>
 )
 
-export const AtomFootprint = createThemeableSpacer<TThemeableSpacer>('Footprint', Footprint)
+export const AtomFootprint = component(
+  startWithType<TAtomFootprint>(),
+  mapContext(ContextInterface)
+)(
+  createThemeableSpacer<TThemeableSpacer>(
+    'Footprint',
+    Footprint
+  )
+)
 
 AtomFootprint.displayName = 'AtomFootprint'

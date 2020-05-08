@@ -3,13 +3,15 @@ import { Card, TCard } from './src'
 
 export const config: TComponentConfig<TCard> = {
   props: {
-    title: ['Spotify', 'iZettle'],
-    description: ['You’ve worked 10 hours and generated 10 k SEK today'],
     action: ['View reports'],
+    description: ['You’ve worked 10 hours and generated 10 k SEK today'],
+    onSelect: [() => {}],
+    title: ['Spotify', 'iZettle'],
   },
   required: [
     'action',
     'description',
+    'onSelect',
     'title',
   ],
 }

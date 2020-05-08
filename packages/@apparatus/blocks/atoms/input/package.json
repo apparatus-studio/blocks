@@ -10,6 +10,7 @@
     "build/"
   ],
   "dependencies": {
+    "@apparatus/blocks-contexts-interface": "^0.0.0",
     "@apparatus/blocks-contexts-theme": "^0.0.0",
     "@babel/runtime": "^7.1.2",
     "@primitives/input": "^2.0.0",
