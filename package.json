@@ -35,7 +35,6 @@
     "file": "tasks/",
     "auto": {
       "shouldMakeGitTags": true,
-      "shouldSendTelegramMessage": true,
       "shouldWriteChangelogFiles": true
     }
   },
