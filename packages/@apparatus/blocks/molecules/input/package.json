@@ -8,10 +8,9 @@
   "react-native": "src/index.tsx",
   "repository": "apparatus-studio/blocks",
   "license": "MIT",
-  "engines": {
-    "node": ">=10.13.0"
-  },
-  "sideEffects": false,
+  "files": [
+    "build/"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "@primitives/view": "^1.0.0",
@@ -30,5 +29,6 @@
     "@types/react": "^16.9.0",
     "autoprops": "^1.0.2",
     "react": "16.11.0"
-  }
+  },
+  "sideEffects": false
 }
