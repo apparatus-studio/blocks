@@ -1,0 +1,7 @@
+export const LINE_HEIGHT_PRIMARY_TITLE = 48
+export const LINE_HEIGHT_SECONDARY_TITLE = 28
+export const LINE_HEIGHT_TERTIARY_TITLE = 28
+export const LINE_HEIGHT_BODY = 24
+export const LINE_HEIGHT_LABEL = 12
+export const LINE_HEIGHT_ERROR_LABEL = 12
+export const LINE_HEIGHT_SMALL_LABEL = 8

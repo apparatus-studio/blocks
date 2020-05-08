@@ -10,47 +10,48 @@ import { TAtomIcon } from '@apparatus/blocks-atoms-icon'
 import { TAtomInput } from '@apparatus/blocks-atoms-input'
 import { TAtomText } from '@apparatus/blocks-atoms-text'
 import { TAtomSpacer } from '@apparatus/blocks-atoms-spacer'
+import { TInterfaceContexts } from '@apparatus/blocks-particles-interface-contexts'
 
 export type TComponentProps = {
   background: {
-    Background: TAtomBackground,
+    Background: TAtomBackground & { interfaceContext?: TInterfaceContexts },
   },
   border: {
-    Border: TAtomBorder,
+    Border: TAtomBorder & { interfaceContext?: TInterfaceContexts },
   },
   image: {},
   spacer: {
-    Footprint: TAtomFootprint,
-    Spacer: TAtomSpacer,
-    Spacer_Input: TAtomInput,
+    Footprint: TAtomFootprint & { interfaceContext?: TInterfaceContexts },
+    Spacer: TAtomSpacer & { interfaceContext?: TInterfaceContexts },
+    Spacer_Input: TAtomInput & { interfaceContext?: TInterfaceContexts },
   },
   text: {
-    Text: TAtomText,
-    Text_Input: TAtomInput,
+    Text: TAtomText & { interfaceContext?: TInterfaceContexts },
+    Text_Input: TAtomInput & { interfaceContext?: TInterfaceContexts },
   },
   vectorShape: {
-    Icon: TAtomIcon,
+    Icon: TAtomIcon & { interfaceContext?: TInterfaceContexts },
   },
 }
 
 export type TTheme = {
   background: {
-    Background: TThemeBackground<TAtomBackground>,
+    Background: TThemeBackground<TAtomBackground & { interfaceContext?: TInterfaceContexts }>,
   },
   border: {
-    Border: TThemeBorder<TAtomBorder>,
+    Border: TThemeBorder<TAtomBorder & { interfaceContext?: TInterfaceContexts }>,
   },
   image: {},
   spacer: {
-    Footprint: TThemeSpacer<TAtomFootprint>,
-    Spacer: TThemeSpacer<TAtomSpacer>,
-    Spacer_Input: TThemeSpacer<TAtomInput>,
+    Footprint: TThemeSpacer<TAtomFootprint & { interfaceContext?: TInterfaceContexts }>,
+    Spacer: TThemeSpacer<TAtomSpacer & { interfaceContext?: TInterfaceContexts }>,
+    Spacer_Input: TThemeSpacer<TAtomInput & { interfaceContext?: TInterfaceContexts }>,
   },
   text: {
-    Text: TThemeText<TAtomText>,
-    Text_Input: TThemeText<TAtomInput>,
+    Text: TThemeText<TAtomText & { interfaceContext?: TInterfaceContexts }>,
+    Text_Input: TThemeText<TAtomInput & { interfaceContext?: TInterfaceContexts }>,
   },
   vectorShape: {
-    Icon: TThemeVectorShape<TAtomIcon>,
+    Icon: TThemeVectorShape<TAtomIcon & { interfaceContext?: TInterfaceContexts }>,
   },
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@apparatus/blocks-types-theme",
+  "name": "@apparatus/blocks-themes-default-mappings",
   "version": "0.0.0",
   "main": "src/index.ts",
   "browser": "src/index.ts",
@@ -17,12 +17,23 @@
     "@apparatus/blocks-atoms-input": "^0.0.0",
     "@apparatus/blocks-atoms-spacer": "^0.0.0",
     "@apparatus/blocks-atoms-text": "^0.0.0",
+    "@apparatus/blocks-particles-icon-names": "^0.0.0",
     "@apparatus/blocks-particles-interface-contexts": "^0.0.0",
-    "@themeables/background": "^2.0.0",
-    "@themeables/border": "^2.0.0",
+    "@apparatus/blocks-particles-text-levels": "^0.0.0",
+    "@apparatus/blocks-themes-default-tokens": "^0.0.0",
+    "@apparatus/blocks-types-theme": "^0.0.0",
+    "@apparatus/blocks-utils-platform": "^0.0.0",
+    "@fantasy-color/lab-to-rgb": "^1.0.0",
+    "@fantasy-color/map-color-space-polynomial": "^1.0.0",
+    "@fantasy-color/rgb-to-lab": "^1.0.0",
+    "@fantasy-color/types": "^1.0.0",
+    "@themeables/background": "*",
+    "@themeables/border": "*",
     "@themeables/spacer": "^0.2.0",
-    "@themeables/text": "^2.0.0",
-    "@themeables/vector-shape": "^2.0.0"
+    "@themeables/text": "*",
+    "@themeables/vector-shape": "*",
+    "colorido": "*",
+    "elegir": "^1.0.0"
   },
   "sideEffects": false
 }
