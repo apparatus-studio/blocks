@@ -1,0 +1,25 @@
+{
+  "name": "@apparatus/blocks-atoms-icon",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-contexts-interface": "^0.0.0",
+    "@apparatus/blocks-contexts-theme": "^0.0.0",
+    "@apparatus/blocks-particles-icon-names": "^0.0.0",
+    "@babel/runtime": "^7.1.2",
+    "@primitives/vector-shape": "^2.0.2",
+    "refun": "^2.0.0"
+  },
+  "devDependencies": {
+    "@apparatus/blocks-particles-icon-names": "^0.0.0",
+    "autoprops": "^1.0.3"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@apparatus/blocks-atoms-background",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-contexts-interface": "^0.0.0",
+    "@apparatus/blocks-contexts-theme": "^0.0.0",
+    "@apparatus/blocks-utils-animated-background": "^0.0.0",
+    "@babel/runtime": "^7.1.2",
+    "refun": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprops": "^1.0.3"
+  },
+  "sideEffects": false
+}
