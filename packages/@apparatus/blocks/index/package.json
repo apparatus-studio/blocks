@@ -1,0 +1,40 @@
+{
+  "name": "@apparatus/blocks-index",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@apparatus/blocks-atoms-background": "^0.0.0",
+    "@apparatus/blocks-atoms-border": "^0.0.0",
+    "@apparatus/blocks-atoms-footprint": "^0.0.0",
+    "@apparatus/blocks-atoms-icon": "^0.0.0",
+    "@apparatus/blocks-atoms-input": "^0.0.0",
+    "@apparatus/blocks-atoms-spacer": "^0.0.0",
+    "@apparatus/blocks-atoms-text": "^0.0.0",
+    "@apparatus/blocks-contexts-debug": "^0.0.0",
+    "@apparatus/blocks-contexts-interface": "^0.0.0",
+    "@apparatus/blocks-contexts-theme": "^0.0.0",
+    "@apparatus/blocks-molecules-button": "^0.0.0",
+    "@apparatus/blocks-molecules-card": "^0.0.0",
+    "@apparatus/blocks-molecules-input": "^0.0.0",
+    "@apparatus/blocks-molecules-text": "^0.0.0",
+    "@apparatus/blocks-particles-button-levels": "^0.0.0",
+    "@apparatus/blocks-particles-icon-names": "^0.0.0",
+    "@apparatus/blocks-particles-interface-contexts": "^0.0.0",
+    "@apparatus/blocks-particles-text-levels": "^0.0.0",
+    "@apparatus/blocks-themes-default-mappings": "^0.0.0",
+    "@apparatus/blocks-themes-default-tokens": "^0.0.0",
+    "@apparatus/blocks-types-theme": "^0.0.0",
+    "@apparatus/blocks-utils-animated-background": "^0.0.0",
+    "@apparatus/blocks-utils-horizontal": "^0.0.0",
+    "@apparatus/blocks-utils-platform": "^0.0.0",
+    "@apparatus/blocks-utils-vertical": "^0.0.0"
+  }
+}
