@@ -1,0 +1,28 @@
+{
+  "name": "@apparatus/blocks-molecules-button-icon",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-atoms-icon": "^0.1.0",
+    "@apparatus/blocks-particles-icon-names": "^0.1.0",
+    "@apparatus/blocks-utils-horizontal": "^0.1.0",
+    "@babel/runtime": "^7.1.2",
+    "@primitives/button": "^2.0.0",
+    "refun": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.0",
+    "@x-ray/common-utils": "^1.0.0",
+    "@x-ray/screenshot-utils": "^1.0.0",
+    "autoprops": "^1.0.0",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}
