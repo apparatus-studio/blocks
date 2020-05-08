@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-utils-platform": "^0.0.0",
+    "@apparatus/blocks-utils-platform": "^0.1.0",
     "@themeables/text": "^2.0.0",
     "colorido": "^1.0.1"
   },

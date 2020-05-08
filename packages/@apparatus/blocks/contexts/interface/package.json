@@ -10,18 +10,18 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-particles-interface-contexts": "^0.0.0"
+    "@apparatus/blocks-particles-interface-contexts": "^0.1.0"
   },
   "devDependencies": {
     "@primitives/view": "^1.0.0",
     "@types/react": "^16.8.6",
-    "@apparatus/blocks-atoms-background": "^0.0.0",
-    "@apparatus/blocks-molecules-button": "^0.0.0",
-    "@apparatus/blocks-molecules-card": "^0.0.0",
-    "@apparatus/blocks-molecules-text": "^0.0.0",
-    "@apparatus/blocks-particles-button-levels": "^0.0.0",
-    "@apparatus/blocks-particles-text-levels": "^0.0.0",
-    "@apparatus/blocks-utils-vertical": "^0.0.0",
+    "@apparatus/blocks-atoms-background": "^0.1.0",
+    "@apparatus/blocks-molecules-button": "^0.1.0",
+    "@apparatus/blocks-molecules-card": "^0.1.0",
+    "@apparatus/blocks-molecules-text": "^0.1.0",
+    "@apparatus/blocks-particles-button-levels": "^0.1.0",
+    "@apparatus/blocks-particles-text-levels": "^0.1.0",
+    "@apparatus/blocks-utils-vertical": "^0.1.0",
     "autoprops": "^1.0.2",
     "react": "16.11.0"
   },
