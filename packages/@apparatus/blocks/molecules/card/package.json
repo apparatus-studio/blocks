@@ -1,0 +1,39 @@
+{
+  "name": "@apparatus/blocks-molecules-card",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.1.2",
+    "@primitives/button": "^2.0.0",
+    "@apparatus/blocks-atoms-background": "^0.0.0",
+    "@apparatus/blocks-atoms-spacer": "^0.0.0",
+    "@apparatus/blocks-atoms-text": "^0.0.0",
+    "@apparatus/blocks-atoms-icon": "^0.0.0",
+    "@apparatus/blocks-contexts-interface": "^0.0.0",
+    "@apparatus/blocks-molecules-text": "^0.0.0",
+    "@apparatus/blocks-particles-icon-names": "^0.0.0",
+    "@apparatus/blocks-particles-interface-contexts": "^0.0.0",
+    "@apparatus/blocks-particles-text-levels": "^0.0.0",
+    "@apparatus/blocks-utils-horizontal": "^0.0.0",
+    "@apparatus/blocks-utils-vertical": "^0.0.0",
+    "elegir": "^1.0.0",
+    "refun": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.0",
+    "@x-ray/common-utils": "^1.0.0",
+    "@x-ray/screenshot-utils": "^1.0.0",
+    "autoprops": "^1.0.0",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}

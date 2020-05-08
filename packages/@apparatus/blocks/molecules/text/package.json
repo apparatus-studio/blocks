@@ -1,0 +1,29 @@
+{
+  "name": "@apparatus/blocks-molecules-text",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-atoms-footprint": "^0.0.0",
+    "@apparatus/blocks-atoms-text": "^0.0.0",
+    "@apparatus/blocks-particles-text-levels": "^0.0.0",
+    "@babel/runtime": "^7.1.2",
+    "@primitives/background": "^2.0.0",
+    "@primitives/block": "^2.0.1",
+    "refun": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.0",
+    "@x-ray/common-utils": "^1.0.0",
+    "@x-ray/screenshot-utils": "^1.0.0",
+    "autoprops": "^1.0.0",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}
