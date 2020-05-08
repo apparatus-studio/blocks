@@ -1715,7 +1715,7 @@
     "@babel/runtime" "^7.1.2"
     tsfn "^1.0.0"
 
-"@primitives/background@*", "@primitives/background@^2.0.0":
+"@primitives/background@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@primitives/background/-/background-2.0.0.tgz#3b225bb08dc93411bcb9dd727afd927e5e70afd6"
   integrity sha512-JlvTPuBEAoUcE8VpyK7JXlyyVX8QF1h8CQDTFX65x5PUAShLd4gRuq2JI7dh9ii+RL0D5LISqX5xyNnxfFNwlQ==
@@ -1725,7 +1725,7 @@
     "@themeables/background" "^2.0.0"
     colorido "^1.0.0"
 
-"@primitives/block@*", "@primitives/block@^2.0.0":
+"@primitives/block@^2.0.0", "@primitives/block@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@primitives/block/-/block-2.0.1.tgz#c30ce06681a3fe5367bb3b1ee4b473aca35e224d"
   integrity sha512-J7520Ifb9ekLpckJyd0BQw4GhxlV7duhofogy21zTqnd9waSiZV2CJETNp8jfsK/QlGTU6kecTy7odsjRu5jwA==
@@ -1734,7 +1734,7 @@
     stili "^2.0.0"
     tsfn "^1.1.0"
 
-"@primitives/border@*", "@primitives/border@^2.0.0":
+"@primitives/border@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@primitives/border/-/border-2.0.0.tgz#a86f96057e4fdfd029026edc32f0603240260440"
   integrity sha512-BFApKcbAez6mulI8iEumSZGXT3gzudvkm3g4oBKh5e365S+91C35dQyr3PNIzjCf9rc+0hQ8AYTfZ1f0lqQOQA==
@@ -1826,7 +1826,7 @@
   dependencies:
     react-native-svg "^12.1.0"
 
-"@primitives/text@*", "@primitives/text@^2.0.0":
+"@primitives/text@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@primitives/text/-/text-2.0.0.tgz#3ef1297fc2834a170f2268c3944b210d4cf38727"
   integrity sha512-rhOK+U6NrAdMyng07tm6jQu/az6N37hKui3qqiEIlCBb5yTod/K+tP73yI/8W46BQKweCBR3of7ZsPvq+7WL+w==
@@ -1844,7 +1844,7 @@
     refun "^1.0.0"
     stili "^1.0.0"
 
-"@primitives/vector-shape@*", "@primitives/vector-shape@^2.0.0", "@primitives/vector-shape@^2.0.2":
+"@primitives/vector-shape@^2.0.0", "@primitives/vector-shape@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@primitives/vector-shape/-/vector-shape-2.0.2.tgz#2da0076b8bf8245c016b907cd619c87fd0012ff1"
   integrity sha512-dR0A/y14+nnf42ffDPZuyIKCSvZODcsuZlEIS9oFOWUk1nxsdYBTgRUJrgf3wpmM11YPMDZArz6q3OvoidESKQ==
@@ -1856,7 +1856,7 @@
     refun "^2.0.0"
     stili "^2.0.0"
 
-"@primitives/view@*", "@primitives/view@^1.0.0":
+"@primitives/view@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@primitives/view/-/view-1.0.0.tgz#8190f637d56e88c4ddf4ed6f272c8ed609c8bad7"
   integrity sha512-HlZCSYNMg+uudfu3tUETRlGlIQDqz/io0o0PlcnkDk2lVeb0WugQZ3v9iOdOdM+Kx7cldSH/nU5mtgZedb3BDQ==
@@ -2281,7 +2281,7 @@
     "@babel/runtime" "^7.1.2"
     refun "^2.0.0"
 
-"@themeables/image@*", "@themeables/image@^2.0.0":
+"@themeables/image@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@themeables/image/-/image-2.0.0.tgz#dbfbd2a12cec4b23dfc5ce547b30ecdfc1291e75"
   integrity sha512-isd+yuAQOg643Mdi8p1xkn4OhwSuxxsoBeQsGlo4LQVtXbCjNoV+taBYoMPa8ng+PrTPLqno25otgnSP+c0PvQ==
@@ -10617,7 +10617,7 @@ redux@^4.0.1, redux@^4.0.4:
     loose-envify "^1.4.0"
     symbol-observable "^1.2.0"
 
-refun@^1.0.0:
+refun@^1.0.0, refun@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/refun/-/refun-1.0.1.tgz#5e2c5d91bab4794e3cd68d68d67cbf3b9b8ade95"
   integrity sha512-jGrtpVW3DtNt0klqA+FrcxOH574sT9xjWN3qLdGheiTQYOqMSAFBppJs5hsNKVpC9UyFpfHiQfWH+1GpHMNULQ==
