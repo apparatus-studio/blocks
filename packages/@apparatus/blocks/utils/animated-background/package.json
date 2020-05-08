@@ -1,0 +1,19 @@
+{
+  "name": "@apparatus/blocks-utils-animated-background",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@primitives/animation": "^1.0.0",
+    "@primitives/background": "^2.0.0",
+    "colorido": "^1.0.1",
+    "react": "16.11.0",
+    "refun": "^2.0.0",
+    "tsfn": "^1.1.1"
+  },
+  "sideEffects": false
+}

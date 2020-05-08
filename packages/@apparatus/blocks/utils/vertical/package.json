@@ -1,0 +1,19 @@
+{
+  "name": "@apparatus/blocks-utils-vertical",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@primitives/view": "^1.0.0",
+    "elegir": "^1.0.0",
+    "react": "16.11.0",
+    "refun": "^2.0.0"
+  },
+  "sideEffects": false
+}

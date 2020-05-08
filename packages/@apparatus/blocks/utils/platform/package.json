@@ -1,0 +1,17 @@
+{
+  "name": "@apparatus/blocks-utils-platform",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "devDependencies": {
+    "react-native": "^0.62.0",
+    "@types/react-native": "^0.62.7"
+  },
+  "sideEffects": false
+}
