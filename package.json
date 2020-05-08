@@ -1,0 +1,96 @@
+{
+  "private": true,
+  "description": "Apparatus Blocks",
+  "workspaces": [
+    "packages/@apparatus/blocks/atoms/*",
+    "packages/@apparatus/blocks/contexts/*",
+    "packages/@apparatus/blocks/molecules/*",
+    "packages/@apparatus/blocks/particles/*",
+    "packages/@apparatus/blocks/themes/*",
+    "packages/@apparatus/blocks/types/*",
+    "packages/@apparatus/blocks/utils/*"
+  ],
+  "devDependencies": {
+    "@bubble-dev/eslint-config": "*",
+    "@bubble-dev/start-preset": "*",
+    "@bubble-dev/typescript-config": "*",
+    "@sandbox/ui": "*",
+    "@start/plugin": "^1.0.0",
+    "@types/node": "^13.13.4",
+    "colorido": "*",
+    "core-js": "^3.2.1",
+    "eslint": "^6.1.0",
+    "graphiq": "^0.2.3",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "tsfn": "^1.1.0",
+    "typescript": "^3.8.3"
+  },
+  "start": {
+    "file": "tasks/",
+    "auto": {
+      "shouldMakeGitTags": true,
+      "shouldSendTelegramMessage": true,
+      "shouldWriteChangelogFiles": true
+    }
+  },
+  "auto": {
+    "bump": {
+      "initialType": "minor",
+      "zeroBreakingChangeType": "minor"
+    },
+    "npm": {
+      "publishSubDirectory": "build",
+      "access": "public"
+    },
+    "prefixes": {
+      "major": "💥",
+      "minor": "🌱",
+      "patch": "🐞",
+      "publish": "📦",
+      "dependencies": "♻️",
+      "initial": "🐣",
+      "lint": "🚷",
+      "test": "👾",
+      "docs": "📝",
+      "refactor": "🛠",
+      "wip": "🚧",
+      "screenshots": "📸"
+    },
+    "commit": {
+      "major": "Breaking Change",
+      "minor": "New feature",
+      "patch": "Bugfix",
+      "initial": "Initial",
+      "depepdencies": "Dependencies",
+      "lint": "Lint",
+      "test": "Test",
+      "docs": "Docs",
+      "refactor": "Refactor",
+      "wip": "WIP",
+      "screenshots": "Snapshots / Screenshots"
+    }
+  },
+  "eslintConfig": {
+    "extends": "@bubble-dev/eslint-config"
+  },
+  "eslintIgnore": [
+    "build/",
+    "coverage/",
+    "node_modules/"
+  ],
+  "renovate": {
+    "commitMessagePrefix": "♻️",
+    "commitMessageAction": "update",
+    "commitMessageTopic": "{{depName}}",
+    "ignoreDeps": [
+      "gradle",
+      "react",
+      "react-dom",
+      "react-test-renderer"
+    ]
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  }
+}
