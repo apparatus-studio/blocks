@@ -1,0 +1,29 @@
+{
+  "name": "@apparatus/blocks-contexts-interface",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-particles-interface-contexts": "^0.0.0"
+  },
+  "devDependencies": {
+    "@primitives/view": "^1.0.0",
+    "@types/react": "^16.8.6",
+    "@apparatus/blocks-atoms-background": "^0.0.0",
+    "@apparatus/blocks-molecules-button": "^0.0.0",
+    "@apparatus/blocks-molecules-card": "^0.0.0",
+    "@apparatus/blocks-molecules-text": "^0.0.0",
+    "@apparatus/blocks-particles-button-levels": "^0.0.0",
+    "@apparatus/blocks-particles-text-levels": "^0.0.0",
+    "@apparatus/blocks-utils-vertical": "^0.0.0",
+    "autoprops": "^1.0.2",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}
