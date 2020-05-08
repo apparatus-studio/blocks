@@ -1785,14 +1785,14 @@
     refun "^2.0.0"
     stili "^2.0.0"
 
-"@primitives/pointer@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@primitives/pointer/-/pointer-2.0.0.tgz#15a241de340f12c17ab4783fb54a5389bcb8fcf2"
-  integrity sha512-eNWvRVDh++tZGH1yf82ii5stzOFvThb9mNgB985D2V9rAZkdEZTroRvkMqrNnP6/9ysR+egd76WoZorIRe4EiA==
+"@primitives/pointer@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@primitives/pointer/-/pointer-1.0.0.tgz#f7abb5393a1e01bfd5559092645c2733329cc3c7"
+  integrity sha512-ky0WREbxU34YMEQor4U7/V8k2e+uH9mwqdk2203TqEWC28RUFD7TtGfVWuJS2ymhtYDyZ6ebMDzvctLq6zpXag==
   dependencies:
-    refun "^2.0.0"
-    stili "^2.0.0"
-    tsfn "^1.1.0"
+    refun "^1.0.0"
+    stili "^1.0.0"
+    tsfn "^1.0.0"
 
 "@primitives/root@^2.0.0":
   version "2.0.0"
@@ -1812,6 +1812,13 @@
     stili "^2.0.0"
     tsfn "^1.1.0"
 
+"@primitives/svg@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@primitives/svg/-/svg-1.0.1.tgz#321e2fe63b09d0e8cfa13a4394b2ce82fdd30af0"
+  integrity sha512-shogR8NLCq5TWdVo/WSUflBC2+2lZBt+lFvu4+JLhT1dmO6ut4ToeSKQnOEmNgNJo2/GeHAdHvCo52n3fKsgpg==
+  dependencies:
+    react-native-svg "^11.0.1"
+
 "@primitives/svg@^2.0.0", "@primitives/svg@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@primitives/svg/-/svg-2.0.1.tgz#c7545282a889f40069a861ce913d8bcffce2c6de"
@@ -1829,15 +1836,15 @@
     refun "^2.0.0"
     stili "^2.0.0"
 
-"@primitives/transform@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@primitives/transform/-/transform-2.0.0.tgz#0c52d4e192e12a87d851c1d28a84ccd8b70b76f2"
-  integrity sha512-EI5qiwgbw9HjhFYgzxDUB5M4IBMrF7MKCKeKm4mgGA6KvyENQSL9ki2RNJSWhVUyIhu7TV8VLo5HYLMHPVw7aA==
+"@primitives/transform@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@primitives/transform/-/transform-1.0.0.tgz#6d97d2020a4ceafa95057b24c770cf31e21aa68f"
+  integrity sha512-xdRC4u8sgG/5yKHOEllnvzJXxUdYV38JoEpxo+9D3AQ2BTV5sQjAfdBoUGVuEGGuKWMGSRobCRfrMJ4Qgl5hEw==
   dependencies:
-    refun "^2.0.0"
-    stili "^2.0.0"
+    refun "^1.0.0"
+    stili "^1.0.0"
 
-"@primitives/vector-shape@*", "@primitives/vector-shape@^2.0.0":
+"@primitives/vector-shape@*", "@primitives/vector-shape@^2.0.0", "@primitives/vector-shape@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@primitives/vector-shape/-/vector-shape-2.0.2.tgz#2da0076b8bf8245c016b907cd619c87fd0012ff1"
   integrity sha512-dR0A/y14+nnf42ffDPZuyIKCSvZODcsuZlEIS9oFOWUk1nxsdYBTgRUJrgf3wpmM11YPMDZArz6q3OvoidESKQ==
@@ -2045,14 +2052,14 @@
     webpack-bundle-analyzer "^3.3.2"
     webpack-dev-server "^3.3.1"
 
-"@sandbox/ui@*":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@sandbox/ui/-/ui-3.0.0.tgz#7a40bc3fda4666c17b3dcd8cf637057e49d5f5fc"
-  integrity sha512-kbw1kzo3UehmE4Q1mmJGhSBnb/q5K5E56hg7e5giQ4Sa/yn1Kv7ggHemFAk+5xFkgkxTdlkqNIRKgq+yQHs81A==
+"@sandbox/ui@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@sandbox/ui/-/ui-2.1.0.tgz#7818c9ab3a3f5f16eed983edebeede7fba7b9288"
+  integrity sha512-PnJAUWDSb/68RZH+ZfR0BW0wPv1UFASRBRkrqk9jOd0YYC4JDzR3Nvw5+vzUrGCwXIdQIHq0oFlrik7uC/ptcA==
   dependencies:
-    "@primitives/pointer" "^2.0.0"
-    "@primitives/svg" "^2.0.0"
-    "@primitives/transform" "^2.0.0"
+    "@primitives/pointer" "^1.0.0"
+    "@primitives/svg" "^1.0.0"
+    "@primitives/transform" "^1.0.0"
     "@psxcode/compose" "^0.1.3"
     colorido "^1.0.0"
     elegir "^1.0.0"
@@ -2062,8 +2069,8 @@
     react-dom "^16.8.6"
     redux "^4.0.4"
     redux-thunk "^2.3.0"
-    refun "^2.0.0"
-    stili "^2.0.0"
+    refun "^1.0.0"
+    stili "^1.0.0"
     syntx "^1.0.0"
     tsfn "^1.1.0"
 
@@ -10433,6 +10440,14 @@ react-native-safe-modules@^1.0.0:
   dependencies:
     dedent "^0.6.0"
 
+react-native-svg@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-11.0.1.tgz#e92e7e9f9cb2604333fd5014fd4edcf62fea6496"
+  integrity sha512-XriIwSoe9eTtKyqxpNC6POSOqmXAB9mZQOm5tMoaimEqQOMfzgYrBoF9nY6VPGmaH5dRlWBqnnBf389APiZFcQ==
+  dependencies:
+    css-select "^2.1.0"
+    css-tree "^1.0.0-alpha.39"
+
 react-native-svg@^12.1.0:
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-12.1.0.tgz#acfe48c35cd5fca3d5fd767abae0560c36cfc03d"
@@ -10601,6 +10616,13 @@ redux@^4.0.1, redux@^4.0.4:
   dependencies:
     loose-envify "^1.4.0"
     symbol-observable "^1.2.0"
+
+refun@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/refun/-/refun-1.0.1.tgz#5e2c5d91bab4794e3cd68d68d67cbf3b9b8ade95"
+  integrity sha512-jGrtpVW3DtNt0klqA+FrcxOH574sT9xjWN3qLdGheiTQYOqMSAFBppJs5hsNKVpC9UyFpfHiQfWH+1GpHMNULQ==
+  dependencies:
+    tsfn "^1.1.1"
 
 refun@^2.0.0:
   version "2.0.0"
@@ -11585,6 +11607,13 @@ static-extend@^0.1.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+
+stili@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stili/-/stili-1.1.0.tgz#d7d1e606e53249fd29c5667a780cf1fe48a07045"
+  integrity sha512-TpgV9o0MgbhtXRN5ZFnOF/Ltu+Dd+QNO7/B8Ydh8WlMOch4qPF/EVR4RyKt/S3tv9MC8YaTAtbp+kCTI9xCehA==
+  dependencies:
+    tsfn "^1.0.0"
 
 stili@^2.0.0:
   version "2.0.0"

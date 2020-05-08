@@ -2,6 +2,7 @@
   "private": true,
   "description": "Apparatus Blocks",
   "workspaces": [
+    "packages/@apparatus/blocks/index",
     "packages/@apparatus/blocks/atoms/*",
     "packages/@apparatus/blocks/contexts/*",
     "packages/@apparatus/blocks/molecules/*",
@@ -11,10 +12,12 @@
     "packages/@apparatus/blocks/utils/*"
   ],
   "devDependencies": {
+    "@apparatus/blocks-contexts-debug": "*",
     "@bubble-dev/eslint-config": "*",
     "@bubble-dev/start-preset": "*",
     "@bubble-dev/typescript-config": "*",
-    "@sandbox/ui": "*",
+    "@primitives/vector-shape": "^2.0.2",
+    "@sandbox/ui": "^2.0.0",
     "@start/plugin": "^1.0.0",
     "@types/node": "^13.13.4",
     "colorido": "*",
@@ -23,6 +26,8 @@
     "graphiq": "^0.2.3",
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "redux": "^4.0.4",
+    "refun": "^2.0.0",
     "tsfn": "^1.1.0",
     "typescript": "^3.8.3"
   },
