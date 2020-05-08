@@ -12,6 +12,7 @@ export const components: TComponents = {
   Button: () => import('@apparatus/blocks-molecules-button/meta' /* webpackChunkName: "Button" */),
   ButtonIcon: () => import('@apparatus/blocks-molecules-button-icon/meta' /* webpackChunkName: "ButtonIcon" */),
   Card: () => import('@apparatus/blocks-molecules-card/meta' /* webpackChunkName: "Card" */),
+  ChatBubble: () => import('@apparatus/blocks-molecules-chat-bubble/meta' /* webpackChunkName: "ChatBubble" */),
   Input: () => import('@apparatus/blocks-molecules-input/meta' /* webpackChunkName: "Input" */),
   Text: () => import('@apparatus/blocks-molecules-text/meta' /* webpackChunkName: "Text" */),
 }
