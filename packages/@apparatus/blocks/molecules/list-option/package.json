@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-atoms-border": "^0.1.0",
+    "@apparatus/blocks-atoms-border": "^0.1.1",
     "@apparatus/blocks-atoms-icon": "^0.1.0",
     "@apparatus/blocks-atoms-spacer": "^0.1.0",
     "@apparatus/blocks-molecules-text": "^0.1.0",

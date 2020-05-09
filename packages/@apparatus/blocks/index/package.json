@@ -12,7 +12,7 @@
   "sideEffects": false,
   "dependencies": {
     "@apparatus/blocks-atoms-background": "^0.1.0",
-    "@apparatus/blocks-atoms-border": "^0.1.0",
+    "@apparatus/blocks-atoms-border": "^0.1.1",
     "@apparatus/blocks-atoms-footprint": "^0.1.0",
     "@apparatus/blocks-atoms-icon": "^0.1.0",
     "@apparatus/blocks-atoms-input": "^0.1.0",
