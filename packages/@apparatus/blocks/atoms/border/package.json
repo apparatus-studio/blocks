@@ -10,10 +10,12 @@
     "build/"
   ],
   "dependencies": {
+    "@apparatus/blocks-contexts-interface": "^0.1.0",
     "@apparatus/blocks-contexts-theme": "^0.1.0",
     "@babel/runtime": "^7.1.2",
     "@primitives/border": "^2.0.0",
-    "@themeables/border": "^2.0.0"
+    "@themeables/border": "^2.0.0",
+    "refun": "^2.0.0"
   },
   "devDependencies": {
     "autoprops": "^1.0.3"

@@ -1,6 +1,8 @@
+import { component, startWithType, mapContext } from 'refun'
 import { Border } from '@primitives/border'
 import { TThemeableBorder } from '@themeables/border'
 import { createThemeableBorder } from '@apparatus/blocks-contexts-theme'
+import { ContextInterface } from '@apparatus/blocks-contexts-interface'
 
 export type TAtomBorder = {
   hasBottom?: boolean,
@@ -9,6 +11,11 @@ export type TAtomBorder = {
   hasTop?: boolean,
 }
 
-export const AtomBorder = createThemeableBorder<TThemeableBorder>('Border', Border)
+export const AtomBorder = component(
+  startWithType<TAtomBorder>(),
+  mapContext(ContextInterface)
+)(
+  createThemeableBorder<TThemeableBorder>('Border', Border)
+)
 
 AtomBorder.displayName = 'AtomBorder'
