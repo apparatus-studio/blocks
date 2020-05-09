@@ -10,10 +10,10 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-atoms-border": "^0.1.1",
-    "@apparatus/blocks-atoms-icon": "^0.1.0",
-    "@apparatus/blocks-atoms-spacer": "^0.1.0",
-    "@apparatus/blocks-molecules-text": "^0.1.0",
+    "@apparatus/blocks-atoms-border": "^0.2.0",
+    "@apparatus/blocks-atoms-icon": "^0.2.0",
+    "@apparatus/blocks-atoms-spacer": "^0.2.0",
+    "@apparatus/blocks-molecules-text": "^0.2.0",
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@apparatus/blocks-utils-horizontal": "^0.1.0",
