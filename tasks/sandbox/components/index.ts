@@ -14,6 +14,7 @@ export const components: TComponents = {
   Card: () => import('@apparatus/blocks-molecules-card/meta' /* webpackChunkName: "Card" */),
   ChatBubble: () => import('@apparatus/blocks-molecules-chat-bubble/meta' /* webpackChunkName: "ChatBubble" */),
   Input: () => import('@apparatus/blocks-molecules-input/meta' /* webpackChunkName: "Input" */),
+  ListOption: () => import('@apparatus/blocks-molecules-list-option/meta' /* webpackChunkName: "ListOption" */),
   Text: () => import('@apparatus/blocks-molecules-text/meta' /* webpackChunkName: "Text" */),
 }
 
