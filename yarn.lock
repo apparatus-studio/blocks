@@ -1745,7 +1745,7 @@
     colorido "^1.0.0"
     refun "^2.0.0"
 
-"@primitives/button@*", "@primitives/button@^2.0.0":
+"@primitives/button@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@primitives/button/-/button-2.0.0.tgz#d2f789b82336d3f4c05cc7564395ca9619e96307"
   integrity sha512-hoG+CTO5YxamrpnUtwFm0S9ahay0rg/0rOTlxCwrzMxtvlvSNumnaFjFP5oEK9NOYs7KPtKjio+PBYb+bM3Eug==
