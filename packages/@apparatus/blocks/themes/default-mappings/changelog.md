@@ -1,3 +1,7 @@
+## v0.3.1
+
+* 🐞 fix text colorization in default interface context
+
 ## v0.3.0
 
 * 🐞 small fixes in theme styles
