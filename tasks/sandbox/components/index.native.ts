@@ -15,8 +15,10 @@ import * as Card from '@apparatus/blocks-molecules-card/meta'
 import * as ChatBubble from '@apparatus/blocks-molecules-chat-bubble/meta'
 import * as ContextHeader from '@apparatus/blocks-molecules-context-header/meta'
 import * as DateInput from '@apparatus/blocks-molecules-date-input/meta'
+import * as FullCover from '@apparatus/blocks-molecules-full-cover/meta'
 import * as Input from '@apparatus/blocks-molecules-input/meta'
 import * as ListOption from '@apparatus/blocks-molecules-list-option/meta'
+import * as SideNavigation from '@apparatus/blocks-molecules-side-navigation/meta'
 import * as StickyButton from '@apparatus/blocks-molecules-sticky-button/meta'
 import * as TabSelector from '@apparatus/blocks-molecules-tab-selector/meta'
 import * as Text from '@apparatus/blocks-molecules-text/meta'
@@ -40,8 +42,10 @@ export const components: TComponents = {
   ChatBubble: () => Promise.resolve(ChatBubble),
   ContextHeader: () => Promise.resolve(ContextHeader),
   DateInput: () => Promise.resolve(DateInput),
+  FullCover: () => Promise.resolve(FullCover),
   Input: () => Promise.resolve(Input),
   ListOption: () => Promise.resolve(ListOption),
+  SideNavigation: () => Promise.resolve(SideNavigation),
   StickyButton: () => Promise.resolve(StickyButton),
   TabSelector: () => Promise.resolve(TabSelector),
   TimeInput: () => Promise.resolve(TimeInput),

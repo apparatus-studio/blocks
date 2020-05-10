@@ -1,0 +1,17 @@
+{
+  "name": "@apparatus/blocks-contexts-parent-size",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "devDependencies": {
+    "@types/react": "^16.8.6",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}
