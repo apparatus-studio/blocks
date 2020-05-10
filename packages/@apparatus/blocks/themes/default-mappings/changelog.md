@@ -1,3 +1,7 @@
+## v0.3.3
+
+* 🐞 visual fix
+
 ## v0.3.2
 
 * 🐞 update styles here and there
