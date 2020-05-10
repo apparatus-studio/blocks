@@ -36,7 +36,6 @@ export const config: TComponentConfig<TButtonIcon> = {
       ICON_NAMES_WATCH,
     ],
   },
-  required: ['name'],
 }
 
 export const Component = ButtonIcon
