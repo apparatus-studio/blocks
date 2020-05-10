@@ -1,3 +1,9 @@
+## v0.5.0
+
+* 🌱 export all packages through index
+
+* undefined update dependencies `@apparatus/blocks-data-validation`, `@apparatus/blocks-data-transform-input`
+
 ## v0.4.0
 
 * undefined update dependencies `@apparatus/blocks-utils-vertical`, `@apparatus/blocks-molecules-button`, `@apparatus/blocks-molecules-card`, `@apparatus/blocks-molecules-input`, `@apparatus/blocks-utils-horizontal`
