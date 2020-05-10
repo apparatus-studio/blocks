@@ -1,6 +1,6 @@
 import { parseISO } from 'date-fns'
 
-export const isNumber = (digit: string): boolean => (
+const isNumber = (digit: string): boolean => (
   digit === '0' ||
   digit === '1' ||
   digit === '2' ||
@@ -13,7 +13,7 @@ export const isNumber = (digit: string): boolean => (
   digit === '9'
 )
 
-export const allNumbers = (digits: string[]): boolean => {
+const allNumbers = (digits: string[]): boolean => {
   if (digits.length === 0) {
     return true
   }
