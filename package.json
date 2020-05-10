@@ -13,6 +13,8 @@
   ],
   "devDependencies": {
     "@apparatus/blocks-contexts-debug": "*",
+    "@apparatus/blocks-contexts-interface": "*",
+    "@apparatus/blocks-particles-interface-contexts": "*",
     "@bubble-dev/eslint-config": "*",
     "@bubble-dev/start-preset": "*",
     "@bubble-dev/typescript-config": "*",
@@ -23,6 +25,7 @@
     "colorido": "*",
     "core-js": "^3.2.1",
     "eslint": "^6.1.0",
+    "elegir": "^1.0.0",
     "graphiq": "^0.2.3",
     "react": "16.11.0",
     "react-native": "0.62.2",

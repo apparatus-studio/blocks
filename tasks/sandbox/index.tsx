@@ -1,17 +1,18 @@
 import React, { FC } from 'react'
+import { elegir } from 'elegir'
 import {
   App as SandboxApp,
-  TActionWithPayload,
+  Dropdown,
+  Icon,
   injectReducer,
+  Label,
   Layout,
   Layout_Item,
-  Label,
+  LAYOUT_SIZE_1,
   LAYOUT_SIZE_FIT,
   SizeText,
-  LAYOUT_SIZE_1,
-  Dropdown,
   SYMBOL_ICON,
-  Icon,
+  TActionWithPayload,
 } from '@sandbox/ui'
 import { ContextDebugProvider } from '@apparatus/blocks-contexts-debug'
 import { Reducer } from 'redux'
@@ -23,17 +24,28 @@ import {
   pureComponent,
 } from 'refun'
 import { isUndefined } from 'tsfn'
+import { ContextInterfaceProvider } from '@apparatus/blocks-contexts-interface'
+import {
+  INTERFACE_CONTEXT_REGULAR,
+  INTERFACE_CONTEXT_ACCENT,
+  INTERFACE_CONTEXT_ERROR,
+  INTERFACE_CONTEXT_SUCCESS,
+} from '@apparatus/blocks-particles-interface-contexts'
 import { components } from './components'
+
+type TInterfaceContextOptions = 'Regular' | 'Accent' | 'Midtone' | 'Success' | 'Error'
 
 // Your action types
 type TChangeDebugAction = TActionWithPayload<'CHANGE_DEBUG', boolean>
+type TChangeInterfaceContext = TActionWithPayload<'CHANGE_INTERFACE_CONTEXT', TInterfaceContextOptions>
 
 // All possible action types
-type TAllActions = TChangeDebugAction
+type TAllActions = TChangeDebugAction | TChangeInterfaceContext
 
 // Your Plugin's store state type
 type TState = {
   shouldDebug: boolean,
+  interfaceContext: TInterfaceContextOptions,
 }
 
 // Reducer for Plugin's store
@@ -43,6 +55,7 @@ const reducer: Reducer<TState, TAllActions> = (state, action) => {
     return {
       ...state,
       shouldDebug: false,
+      interfaceContext: 'Regular',
     }
   }
 
@@ -51,6 +64,12 @@ const reducer: Reducer<TState, TAllActions> = (state, action) => {
       return {
         ...state,
         shouldDebug: action.payload,
+      }
+    }
+    case 'CHANGE_INTERFACE_CONTEXT': {
+      return {
+        ...state,
+        interfaceContext: action.payload,
       }
     }
     default: {
@@ -73,19 +92,26 @@ ThemeIcon.componentSymbol = SYMBOL_ICON
 const Popover = component(
   startWithType<{}>(),
   mapStoreState((state) => ({
+    interfaceContext: state.interfaceContext,
     shouldDebug: state.shouldDebug,
-  }), ['shouldDebug']),
+  }), ['interfaceContext', 'shouldDebug']),
   mapStoreDispatch('dispatch'),
   mapHandlers({
-    onPress: ({ dispatch }) => (value) => {
+    onDebugPress: ({ dispatch }) => (value) => {
       dispatch({
         type: 'CHANGE_DEBUG',
         payload: value === 'enable',
       })
     },
+    onInterfacePress: ({ dispatch }) => (value) => {
+      dispatch({
+        type: 'CHANGE_INTERFACE_CONTEXT',
+        payload: value,
+      })
+    },
   }),
   mapWithProps(({ shouldDebug }) => ({
-    options: [
+    debugOptions: [
       {
         value: 'enable',
         label: 'Enable',
@@ -95,9 +121,31 @@ const Popover = component(
         label: 'Disable',
       },
     ],
-    value: shouldDebug ? 'enable' : 'disable',
+    debugValue: shouldDebug ? 'enable' : 'disable',
+    interfaceOptions: [
+      {
+        value: 'Regular',
+        label: 'Regular',
+      },
+      {
+        value: 'Accent',
+        label: 'Accent',
+      },
+      {
+        value: 'Midtone',
+        label: 'Midtone',
+      },
+      {
+        value: 'Success',
+        label: 'Success',
+      },
+      {
+        value: 'Error',
+        label: 'Error',
+      },
+    ],
   }))
-)(({ options, value, onPress }) => (
+)(({ interfaceContext, debugOptions, debugValue, onDebugPress, onInterfacePress, interfaceOptions }) => (
   <Layout direction="vertical">
     <Layout_Item width={400} height={40}>
       <Label>
@@ -108,7 +156,21 @@ const Popover = component(
             </SizeText>
           </Layout_Item>
           <Layout_Item width={LAYOUT_SIZE_FIT} vAlign="center">
-            <Dropdown value={value} options={options} onChange={onPress}/>
+            <Dropdown value={debugValue} options={debugOptions} onChange={onDebugPress}/>
+          </Layout_Item>
+        </Layout>
+      </Label>
+    </Layout_Item>
+    <Layout_Item width={400} height={40}>
+      <Label>
+        <Layout spaceBetween={15}>
+          <Layout_Item width={LAYOUT_SIZE_1} vAlign="center">
+            <SizeText>
+              Current interface context:
+            </SizeText>
+          </Layout_Item>
+          <Layout_Item width={LAYOUT_SIZE_FIT} vAlign="center">
+            <Dropdown value={interfaceContext} options={interfaceOptions} onChange={onInterfacePress}/>
           </Layout_Item>
         </Layout>
       </Label>
@@ -127,16 +189,34 @@ type TProvider = {
 const Provider = pureComponent(
   startWithType<TProvider>(),
   mapStoreState((state) => ({
+    interfaceContext: state.interfaceContext,
     shouldDebug: state.shouldDebug,
-  }), ['shouldDebug'])
-)(({ Component, props, shouldDebug }) => (
-  shouldDebug ? (
-    <ContextDebugProvider
-      shouldDebug={shouldDebug}
-    >
-      <Component {...props}/>
-    </ContextDebugProvider>
-  ) : <Component {...props}/>
+  }), ['interfaceContext', 'shouldDebug'])
+)(({ Component, props, shouldDebug, interfaceContext }) => (
+  <ContextInterfaceProvider
+    interfaceContext={
+      elegir(
+        interfaceContext === 'Accent',
+        INTERFACE_CONTEXT_ACCENT,
+        interfaceContext === 'Error',
+        INTERFACE_CONTEXT_ERROR,
+        interfaceContext === 'Success',
+        INTERFACE_CONTEXT_SUCCESS,
+        interfaceContext === 'Regular' || true,
+        INTERFACE_CONTEXT_REGULAR
+      )
+    }
+  >
+    {
+      shouldDebug ? (
+        <ContextDebugProvider
+          shouldDebug={shouldDebug}
+        >
+          <Component {...props}/>
+        </ContextDebugProvider>
+      ) : <Component {...props}/>
+    }
+  </ContextInterfaceProvider>
 ))
 
 export const App = () => (
