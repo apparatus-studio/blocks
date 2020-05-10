@@ -4,6 +4,7 @@ import { component, startWithType } from 'refun'
 import { View } from '@primitives/view'
 
 export type TVertical = {
+  height?: string | number,
   width?: string | number,
   maxWidth?: string | number,
   align?: 'center',
@@ -16,7 +17,17 @@ export type TVertical = {
 
 export const Vertical = component(
   startWithType<TVertical>()
-)(({ align, children, hAlign, vAlign, shouldGrow, maxWidth, width, stretchToFill }) => (
+)(({
+  align,
+  children,
+  hAlign,
+  vAlign,
+  shouldGrow,
+  maxWidth,
+  height,
+  width,
+  stretchToFill,
+}) => (
   <View
     role="vertical"
     style={{
@@ -24,6 +35,7 @@ export const Vertical = component(
       flexDirection: 'column',
       position: 'relative',
       maxWidth,
+      height,
       width,
       flexGrow: (shouldGrow !== undefined && shouldGrow)
         ? 1
