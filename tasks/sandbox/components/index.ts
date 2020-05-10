@@ -16,6 +16,7 @@ export const components: TComponents = {
   Input: () => import('@apparatus/blocks-molecules-input/meta' /* webpackChunkName: "Input" */),
   ListOption: () => import('@apparatus/blocks-molecules-list-option/meta' /* webpackChunkName: "ListOption" */),
   Text: () => import('@apparatus/blocks-molecules-text/meta' /* webpackChunkName: "Text" */),
+  Toast: () => import('@apparatus/blocks-molecules-toast/meta' /* webpackChunkName: "Toast" */),
   Toggle: () => import('@apparatus/blocks-molecules-toggle/meta' /* webpackChunkName: "Toggle" */),
 }
 

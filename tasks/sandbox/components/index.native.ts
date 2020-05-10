@@ -15,6 +15,7 @@ import * as ChatBubble from '@apparatus/blocks-molecules-chat-bubble/meta'
 import * as Input from '@apparatus/blocks-molecules-input/meta'
 import * as ListOption from '@apparatus/blocks-molecules-list-option/meta'
 import * as Text from '@apparatus/blocks-molecules-text/meta'
+import * as Toast from '@apparatus/blocks-molecules-toast/meta'
 import * as Toggle from '@apparatus/blocks-molecules-toggle/meta'
 
 export const components: TComponents = {
@@ -33,5 +34,6 @@ export const components: TComponents = {
   Input: () => Promise.resolve(Input),
   ListOption: () => Promise.resolve(ListOption),
   Text: () => Promise.resolve(Text),
+  Toast: () => Promise.resolve(Toast),
   Toggle: () => Promise.resolve(Toggle),
 }

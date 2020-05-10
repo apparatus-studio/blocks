@@ -1,0 +1,31 @@
+{
+  "name": "@apparatus/blocks-molecules-toast",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-atoms-background": "^0.2.0",
+    "@apparatus/blocks-atoms-icon": "^0.2.0",
+    "@apparatus/blocks-atoms-spacer": "^0.2.0",
+    "@apparatus/blocks-contexts-interface": "^0.1.0",
+    "@apparatus/blocks-molecules-text": "^0.2.0",
+    "@apparatus/blocks-particles-feedback-states": "^0.0.0",
+    "@apparatus/blocks-particles-icon-names": "^0.1.0",
+    "@apparatus/blocks-particles-interface-contexts": "^0.1.0",
+    "@apparatus/blocks-particles-text-levels": "^0.1.0",
+    "@apparatus/blocks-utils-horizontal": "^0.1.0",
+    "@apparatus/blocks-utils-vertical": "^0.1.0",
+    "react": "16.11.0",
+    "refun": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprops": "^1.0.2"
+  },
+  "sideEffects": false
+}
