@@ -28,22 +28,6 @@ export const sandbox = Sandbox({
   fontsDir: FONTS_DIR,
 })
 
-export const xray = () =>
-  plugin('ui', ({ logMessage }) => async () => {
-    const { runWebApp } = await import('@rebox/web')
-    const { runXRayServer } = await import('./x-ray-ui/run-server')
-
-    await runXRayServer()
-
-    await runWebApp({
-      entryPointPath: './tasks/x-ray-ui/index.tsx',
-      htmlTemplatePath: './tasks/x-ray-ui/template.html',
-      isQuiet: true,
-    })
-
-    logMessage('http://localhost:3000/')
-  })
-
 export const run = (file: string) =>
   plugin('main', () => async () => {
     const { resolve } = await import('path')
