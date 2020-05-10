@@ -14,6 +14,7 @@ import * as ButtonIcon from '@apparatus/blocks-molecules-button-icon/meta'
 import * as Card from '@apparatus/blocks-molecules-card/meta'
 import * as ChatBubble from '@apparatus/blocks-molecules-chat-bubble/meta'
 import * as ContextHeader from '@apparatus/blocks-molecules-context-header/meta'
+import * as DateInput from '@apparatus/blocks-molecules-date-input/meta'
 import * as Input from '@apparatus/blocks-molecules-input/meta'
 import * as ListOption from '@apparatus/blocks-molecules-list-option/meta'
 import * as StickyButton from '@apparatus/blocks-molecules-sticky-button/meta'
@@ -38,6 +39,7 @@ export const components: TComponents = {
   Card: () => Promise.resolve(Card),
   ChatBubble: () => Promise.resolve(ChatBubble),
   ContextHeader: () => Promise.resolve(ContextHeader),
+  DateInput: () => Promise.resolve(DateInput),
   Input: () => Promise.resolve(Input),
   ListOption: () => Promise.resolve(ListOption),
   StickyButton: () => Promise.resolve(StickyButton),

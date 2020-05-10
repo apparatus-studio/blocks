@@ -15,6 +15,7 @@ export const components: TComponents = {
   Card: () => import('@apparatus/blocks-molecules-card/meta' /* webpackChunkName: "Card" */),
   ChatBubble: () => import('@apparatus/blocks-molecules-chat-bubble/meta' /* webpackChunkName: "ChatBubble" */),
   ContextHeader: () => import('@apparatus/blocks-molecules-context-header/meta' /* webpackChunkName: "ContextHeader" */),
+  DateInput: () => import('@apparatus/blocks-molecules-date-input/meta' /* webpackChunkName: "DateInput" */),
   Input: () => import('@apparatus/blocks-molecules-input/meta' /* webpackChunkName: "Input" */),
   ListOption: () => import('@apparatus/blocks-molecules-list-option/meta' /* webpackChunkName: "ListOption" */),
   StickyButton: () => import('@apparatus/blocks-molecules-sticky-button/meta' /* webpackChunkName: "StickyButton" */),
