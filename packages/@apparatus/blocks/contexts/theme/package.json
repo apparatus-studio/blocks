@@ -18,7 +18,7 @@
     "@themeables/spacer": "^0.2.0",
     "@themeables/text": "^2.0.0",
     "@themeables/vector-shape": "^2.0.0",
-    "@apparatus/blocks-themes-default-mappings": "^0.3.1",
+    "@apparatus/blocks-themes-default-mappings": "^0.3.2",
     "@apparatus/blocks-types-theme": "^0.3.0",
     "refun": "^2.0.0"
   },
