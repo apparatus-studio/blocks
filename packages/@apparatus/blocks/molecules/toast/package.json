@@ -19,8 +19,8 @@
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-particles-interface-contexts": "^0.2.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
-    "@apparatus/blocks-utils-horizontal": "^0.1.0",
-    "@apparatus/blocks-utils-vertical": "^0.1.0",
+    "@apparatus/blocks-utils-horizontal": "^0.2.0",
+    "@apparatus/blocks-utils-vertical": "^0.2.0",
     "react": "16.11.0",
     "refun": "^1.0.1"
   },

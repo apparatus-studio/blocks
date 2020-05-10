@@ -17,8 +17,8 @@
     "@apparatus/blocks-particles-interface-contexts": "^0.2.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@apparatus/blocks-themes-default-tokens": "^0.1.0",
-    "@apparatus/blocks-utils-horizontal": "^0.1.0",
-    "@apparatus/blocks-utils-vertical": "^0.1.0",
+    "@apparatus/blocks-utils-horizontal": "^0.2.0",
+    "@apparatus/blocks-utils-vertical": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "elegir": "^1.0.0",
     "refun": "^1.0.1"

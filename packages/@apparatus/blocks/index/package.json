@@ -21,9 +21,9 @@
     "@apparatus/blocks-contexts-debug": "^0.1.0",
     "@apparatus/blocks-contexts-interface": "^0.2.0",
     "@apparatus/blocks-contexts-theme": "^0.3.0",
-    "@apparatus/blocks-molecules-button": "^0.3.0",
-    "@apparatus/blocks-molecules-card": "^0.3.0",
-    "@apparatus/blocks-molecules-input": "^0.3.2",
+    "@apparatus/blocks-molecules-button": "^0.4.0",
+    "@apparatus/blocks-molecules-card": "^0.4.0",
+    "@apparatus/blocks-molecules-input": "^0.4.0",
     "@apparatus/blocks-molecules-text": "^0.3.0",
     "@apparatus/blocks-particles-button-levels": "^0.1.0",
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
@@ -33,8 +33,8 @@
     "@apparatus/blocks-themes-default-tokens": "^0.1.0",
     "@apparatus/blocks-types-theme": "^0.3.0",
     "@apparatus/blocks-utils-animated-background": "^0.1.0",
-    "@apparatus/blocks-utils-horizontal": "^0.1.0",
+    "@apparatus/blocks-utils-horizontal": "^0.2.0",
     "@apparatus/blocks-utils-platform": "^0.1.0",
-    "@apparatus/blocks-utils-vertical": "^0.1.0"
+    "@apparatus/blocks-utils-vertical": "^0.2.0"
   }
 }

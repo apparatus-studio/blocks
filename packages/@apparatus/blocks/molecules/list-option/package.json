@@ -16,8 +16,8 @@
     "@apparatus/blocks-molecules-text": "^0.3.0",
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
-    "@apparatus/blocks-utils-horizontal": "^0.1.0",
-    "@apparatus/blocks-utils-vertical": "^0.1.0",
+    "@apparatus/blocks-utils-horizontal": "^0.2.0",
+    "@apparatus/blocks-utils-vertical": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "@primitives/button": "^2.0.0",
     "refun": "^1.0.1"
