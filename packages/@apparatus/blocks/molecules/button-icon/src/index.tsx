@@ -7,7 +7,7 @@ import { Horizontal } from '@apparatus/blocks-utils-horizontal'
 
 export type TButtonIcon = {
   accessibilityLabel?: string,
-  name: TIconNames,
+  name?: TIconNames,
   onPress?: () => void,
 } & TMapFocused
   & TMapHovered
