@@ -9,6 +9,7 @@ export const components: TComponents = {
   AtomSpacer: () => import('@apparatus/blocks-atoms-spacer/meta' /* webpackChunkName: "AtomSpacer" */),
   AtomText: () => import('@apparatus/blocks-atoms-text/meta' /* webpackChunkName: "AtomText" */),
   ContextInterface: () => import('@apparatus/blocks-contexts-interface/meta' /* webpackChunkName: "ContextInterface" */),
+  ActionSheet: () => import('@apparatus/blocks-molecules-action-sheet/meta' /* webpackChunkName: "ActionSheet" */),
   Button: () => import('@apparatus/blocks-molecules-button/meta' /* webpackChunkName: "Button" */),
   ButtonIcon: () => import('@apparatus/blocks-molecules-button-icon/meta' /* webpackChunkName: "ButtonIcon" */),
   Card: () => import('@apparatus/blocks-molecules-card/meta' /* webpackChunkName: "Card" */),

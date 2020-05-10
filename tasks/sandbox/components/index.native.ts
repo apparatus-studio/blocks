@@ -8,6 +8,7 @@ import * as AtomInput from '@apparatus/blocks-atoms-input/meta'
 import * as AtomSpacer from '@apparatus/blocks-atoms-spacer/meta'
 import * as AtomText from '@apparatus/blocks-atoms-text/meta'
 import * as ContextInterface from '@apparatus/blocks-contexts-interface/meta'
+import * as ActionSheet from '@apparatus/blocks-molecules-action-sheet/meta'
 import * as Button from '@apparatus/blocks-molecules-button/meta'
 import * as ButtonIcon from '@apparatus/blocks-molecules-button-icon/meta'
 import * as Card from '@apparatus/blocks-molecules-card/meta'
@@ -27,6 +28,7 @@ export const components: TComponents = {
   AtomSpacer: () => Promise.resolve(AtomSpacer),
   AtomText: () => Promise.resolve(AtomText),
   ContextInterface: () => Promise.resolve(ContextInterface),
+  ActionSheet: () => Promise.resolve(ActionSheet),
   Button: () => Promise.resolve(Button),
   ButtonIcon: () => Promise.resolve(ButtonIcon),
   Card: () => Promise.resolve(Card),
