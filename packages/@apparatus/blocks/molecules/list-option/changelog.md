@@ -1,3 +1,7 @@
+## v0.4.0
+
+* undefined update dependencies `@apparatus/blocks-utils-vertical`, `@apparatus/blocks-utils-horizontal`
+
 ## v0.3.1
 
 * 🐞 update styles here and there
