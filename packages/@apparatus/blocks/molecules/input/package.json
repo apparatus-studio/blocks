@@ -10,9 +10,8 @@
     "build/"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.1.2",
-    "@primitives/view": "^1.0.0",
     "@apparatus/blocks-atoms-background": "^0.3.0",
+    "@apparatus/blocks-atoms-border": "^0.3.0",
     "@apparatus/blocks-atoms-icon": "^0.3.0",
     "@apparatus/blocks-atoms-input": "^0.3.0",
     "@apparatus/blocks-atoms-spacer": "^0.3.0",
@@ -21,6 +20,8 @@
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@apparatus/blocks-utils-horizontal": "^0.1.0",
     "@apparatus/blocks-utils-vertical": "^0.1.0",
+    "@babel/runtime": "^7.1.2",
+    "@primitives/view": "^1.0.0",
     "refun": "^2.0.0"
   },
   "devDependencies": {

@@ -4,17 +4,19 @@ import {
   mapDefaultProps,
   startWithType,
   TMapFocused,
+  mapFocused,
 } from 'refun'
 import { View } from '@primitives/view'
 import { Horizontal } from '@apparatus/blocks-utils-horizontal'
 import { AtomBackground } from '@apparatus/blocks-atoms-background'
+import { AtomBorder } from '@apparatus/blocks-atoms-border'
 import { AtomSpacer } from '@apparatus/blocks-atoms-spacer'
 import { Vertical } from '@apparatus/blocks-utils-vertical'
 import { Text } from '@apparatus/blocks-molecules-text'
 import { AtomIcon } from '@apparatus/blocks-atoms-icon'
 import { TIconNames } from '@apparatus/blocks-particles-icon-names'
 import { AtomInput } from '@apparatus/blocks-atoms-input'
-import { TEXT_LEVEL_SMALL_LABEL } from '@apparatus/blocks-particles-text-levels'
+import { TEXT_LEVEL_BODY } from '@apparatus/blocks-particles-text-levels'
 
 export type TInput = {
   value?: string,
@@ -25,19 +27,33 @@ export type TInput = {
 
 export const Input = component(
   startWithType<TInput>(),
+  mapFocused,
   mapDefaultProps({
     value: '',
     onChange: () => {},
   })
 )(({
   icon,
+  isFocused,
   placeholder,
   onChange,
   onBlur,
+  onFocus,
   value,
 }) => (
   <Horizontal shouldGrow>
-    <AtomBackground/>
+    <AtomBackground
+      multiplier={3}
+    />
+    <AtomBorder
+      hasBottom
+      hasLeft
+      hasRight
+      hasTop
+      isFocused={isFocused}
+      multiplier={3}
+      size={2}
+    />
     <Horizontal vAlign="center">
       <AtomSpacer multiplier={5}/>
       <Vertical hAlign="center">
@@ -53,7 +69,7 @@ export const Input = component(
           <Vertical>
             <AtomSpacer multiplier={1}/>
             <Horizontal>
-              <Text level={TEXT_LEVEL_SMALL_LABEL}>
+              <Text level={TEXT_LEVEL_BODY}>
                 {placeholder !== undefined && value === '' ? placeholder : ' '}
               </Text>
             </Horizontal>
@@ -77,6 +93,7 @@ export const Input = component(
     >
       <AtomInput
         onBlur={onBlur}
+        onFocus={onFocus}
         hasIcon={icon !== undefined}
         value={value}
         onChange={onChange}

@@ -28,7 +28,7 @@ export const ListOption = component(
 )(({ isFirst, onPress, optionName, value }) => (
   <Button onPress={onPress}>
     <Horizontal vAlign="center" shouldGrow>
-      <AtomBorder hasTop={!isFirst}/>
+      <AtomBorder hasTop={!isFirst} multiplier={0} size={1}/>
       <Vertical hAlign="center" shouldGrow>
         <AtomSpacer multiplier={5}/>
         <Horizontal width="100%">

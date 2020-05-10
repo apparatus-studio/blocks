@@ -18,7 +18,6 @@ import {
 } from '@apparatus/blocks-particles-interface-contexts'
 import {
   COLOR_BACKGROUND_PRIMARY,
-  COLOR_LIGHT_DETAILS,
   COLOR_ACCENT_PRIMARY,
   FONT_FAMILY_BOLD,
   FONT_FAMILY_REGULAR,

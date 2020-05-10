@@ -9,6 +9,9 @@ export type TAtomBorder = {
   hasLeft?: boolean,
   hasRight?: boolean,
   hasTop?: boolean,
+  isFocused?: boolean,
+  multiplier: 0 | 3 | 6 | 12,
+  size: 0 | 1 | 2,
 }
 
 export const AtomBorder = component(

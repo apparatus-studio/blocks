@@ -26,7 +26,6 @@ import {
 import {
   COLOR_ACCENT_PRIMARY,
   COLOR_BACKGROUND_PRIMARY,
-  COLOR_LIGHT_DETAILS,
   GRID,
   ICON_ARROW_LEFT,
   ICON_CLOSE,
@@ -57,7 +56,7 @@ export const themeIcon = ({ name, isInteractive, interfaceContext }: TAtomIcon &
     isInteractive !== undefined && isInteractive,
     COLOR_ACCENT_PRIMARY,
     true,
-    COLOR_LIGHT_DETAILS
+    COLOR_ACCENT_PRIMARY
   ),
   path: elegir(
     name === ICON_NAMES_ARROW_DOWN,
