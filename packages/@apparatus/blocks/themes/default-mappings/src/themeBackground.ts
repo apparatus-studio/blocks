@@ -4,13 +4,17 @@ import { TThemeableBackground } from '@themeables/background'
 import { TAtomBackground } from '@apparatus/blocks-atoms-background'
 import {
   INTERFACE_CONTEXT_ACCENT,
+  INTERFACE_CONTEXT_ERROR,
   INTERFACE_CONTEXT_MIDTONE,
+  INTERFACE_CONTEXT_SUCCESS,
   TInterfaceContexts,
 } from '@apparatus/blocks-particles-interface-contexts'
 import {
   COLOR_ACCENT_PRIMARY,
   COLOR_BACKGROUND_PRIMARY,
+  COLOR_ERROR,
   COLOR_LIGHT_DETAILS,
+  COLOR_SUCCESS,
   GRID,
 } from '@apparatus/blocks-themes-default-tokens'
 import { pressed, hovered } from './util/changeColor'
@@ -42,6 +46,10 @@ export const themeBackground = ({
       COLOR_ACCENT_PRIMARY,
       interfaceContext === INTERFACE_CONTEXT_MIDTONE,
       COLOR_LIGHT_DETAILS,
+      interfaceContext === INTERFACE_CONTEXT_SUCCESS,
+      COLOR_SUCCESS,
+      interfaceContext === INTERFACE_CONTEXT_ERROR,
+      COLOR_ERROR,
       true,
       COLOR_BACKGROUND_PRIMARY
     ),

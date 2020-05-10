@@ -10,7 +10,12 @@ import {
   TEXT_LEVEL_ERROR_LABEL,
   TEXT_LEVEL_SMALL_LABEL,
 } from '@apparatus/blocks-particles-text-levels'
-import { INTERFACE_CONTEXT_ACCENT, TInterfaceContexts } from '@apparatus/blocks-particles-interface-contexts'
+import {
+  INTERFACE_CONTEXT_ACCENT,
+  INTERFACE_CONTEXT_ERROR,
+  INTERFACE_CONTEXT_SUCCESS,
+  TInterfaceContexts,
+} from '@apparatus/blocks-particles-interface-contexts'
 import {
   COLOR_BACKGROUND_PRIMARY,
   COLOR_LIGHT_DETAILS,
@@ -41,6 +46,10 @@ export const themeText = ({
 }: TAtomText & { interfaceContext?: TInterfaceContexts }): TThemeableText => ({
   color: elegir(
     interfaceContext === INTERFACE_CONTEXT_ACCENT,
+    COLOR_BACKGROUND_PRIMARY,
+    interfaceContext === INTERFACE_CONTEXT_SUCCESS,
+    COLOR_BACKGROUND_PRIMARY,
+    interfaceContext === INTERFACE_CONTEXT_ERROR,
     COLOR_BACKGROUND_PRIMARY,
     isInteractive !== undefined && isInteractive,
     COLOR_ACCENT_PRIMARY,
