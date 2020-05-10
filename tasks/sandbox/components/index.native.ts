@@ -19,6 +19,7 @@ import * as ListOption from '@apparatus/blocks-molecules-list-option/meta'
 import * as StickyButton from '@apparatus/blocks-molecules-sticky-button/meta'
 import * as TabSelector from '@apparatus/blocks-molecules-tab-selector/meta'
 import * as Text from '@apparatus/blocks-molecules-text/meta'
+import * as TimeInput from '@apparatus/blocks-molecules-time-input/meta'
 import * as Toast from '@apparatus/blocks-molecules-toast/meta'
 import * as Toggle from '@apparatus/blocks-molecules-toggle/meta'
 
@@ -41,6 +42,7 @@ export const components: TComponents = {
   ListOption: () => Promise.resolve(ListOption),
   StickyButton: () => Promise.resolve(StickyButton),
   TabSelector: () => Promise.resolve(TabSelector),
+  TimeInput: () => Promise.resolve(TimeInput),
   Text: () => Promise.resolve(Text),
   Toast: () => Promise.resolve(Toast),
   Toggle: () => Promise.resolve(Toggle),

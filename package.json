@@ -5,6 +5,7 @@
     "packages/@apparatus/blocks/index",
     "packages/@apparatus/blocks/atoms/*",
     "packages/@apparatus/blocks/contexts/*",
+    "packages/@apparatus/blocks/data/*",
     "packages/@apparatus/blocks/molecules/*",
     "packages/@apparatus/blocks/particles/*",
     "packages/@apparatus/blocks/themes/*",

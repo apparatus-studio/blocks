@@ -20,6 +20,7 @@ export const components: TComponents = {
   StickyButton: () => import('@apparatus/blocks-molecules-sticky-button/meta' /* webpackChunkName: "StickyButton" */),
   TabSelector: () => import('@apparatus/blocks-molecules-tab-selector/meta' /* webpackChunkName: "TabSelector" */),
   Text: () => import('@apparatus/blocks-molecules-text/meta' /* webpackChunkName: "Text" */),
+  TimeInput: () => import('@apparatus/blocks-molecules-time-input/meta' /* webpackChunkName: "TimeInput" */),
   Toast: () => import('@apparatus/blocks-molecules-toast/meta' /* webpackChunkName: "Toast" */),
   Toggle: () => import('@apparatus/blocks-molecules-toggle/meta' /* webpackChunkName: "Toggle" */),
 }
