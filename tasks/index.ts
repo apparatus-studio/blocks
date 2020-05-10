@@ -12,18 +12,20 @@ import {
 
 export * from '@bubble-dev/start-preset'
 
-// custom tasks:
-export const checkChromeScreenshots = CheckChromeScreenshots()
-export const checkFirefoxScreenshots = CheckFirefoxScreenshots()
-export const checkAndroidScreenshots = CheckAndroidScreenshots()
-export const checkIosScreenshots = CheckIosScreenshots()
-export const checkIosWebScreenshots = CheckIosWebScreenshots()
-export const checkAndroidWebScreenshots = CheckAndroidWebScreenshots()
-export const checkChromePerfSnapshots = CheckChromePerfSnapshots()
+const FONTS_DIR = 'assets/fonts/'
+
+export const checkChromeScreenshots = CheckChromeScreenshots(FONTS_DIR)
+export const checkFirefoxScreenshots = CheckFirefoxScreenshots(FONTS_DIR)
+export const checkAndroidScreenshots = CheckAndroidScreenshots(FONTS_DIR)
+export const checkIosScreenshots = CheckIosScreenshots(FONTS_DIR)
+export const checkIosWebScreenshots = CheckIosWebScreenshots(FONTS_DIR)
+export const checkAndroidWebScreenshots = CheckAndroidWebScreenshots(FONTS_DIR)
+export const checkChromePerfSnapshots = CheckChromePerfSnapshots(FONTS_DIR)
 
 export const sandbox = Sandbox({
   entryPointPath: './tasks/sandbox/index.tsx',
   htmlTemplatePath: './tasks/sandbox/templates/dev.html',
+  fontsDir: FONTS_DIR,
 })
 
 export const xray = () =>
