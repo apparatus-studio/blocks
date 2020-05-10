@@ -29,7 +29,7 @@
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-particles-interface-contexts": "^0.2.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
-    "@apparatus/blocks-themes-default-mappings": "^0.3.0",
+    "@apparatus/blocks-themes-default-mappings": "^0.3.1",
     "@apparatus/blocks-themes-default-tokens": "^0.1.0",
     "@apparatus/blocks-types-theme": "^0.3.0",
     "@apparatus/blocks-utils-animated-background": "^0.1.0",
