@@ -1,0 +1,13 @@
+{
+  "name": "@apparatus/blocks-particles-feedback-states",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "sideEffects": false
+}
