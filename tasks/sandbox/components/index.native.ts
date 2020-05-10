@@ -13,6 +13,7 @@ import * as Button from '@apparatus/blocks-molecules-button/meta'
 import * as ButtonIcon from '@apparatus/blocks-molecules-button-icon/meta'
 import * as Card from '@apparatus/blocks-molecules-card/meta'
 import * as ChatBubble from '@apparatus/blocks-molecules-chat-bubble/meta'
+import * as ContextHeader from '@apparatus/blocks-molecules-context-header/meta'
 import * as Input from '@apparatus/blocks-molecules-input/meta'
 import * as ListOption from '@apparatus/blocks-molecules-list-option/meta'
 import * as Text from '@apparatus/blocks-molecules-text/meta'
@@ -33,6 +34,7 @@ export const components: TComponents = {
   ButtonIcon: () => Promise.resolve(ButtonIcon),
   Card: () => Promise.resolve(Card),
   ChatBubble: () => Promise.resolve(ChatBubble),
+  ContextHeader: () => Promise.resolve(ContextHeader),
   Input: () => Promise.resolve(Input),
   ListOption: () => Promise.resolve(ListOption),
   Text: () => Promise.resolve(Text),
