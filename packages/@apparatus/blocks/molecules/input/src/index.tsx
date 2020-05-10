@@ -62,7 +62,7 @@ export const Input = component(
           {icon !== undefined && (
             <>
               <AtomIcon name={icon}/>
-              <AtomSpacer multiplier={1}/>
+              <AtomSpacer multiplier={2}/>
             </>
           )}
 
