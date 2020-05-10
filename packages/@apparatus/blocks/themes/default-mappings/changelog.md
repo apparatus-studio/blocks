@@ -1,3 +1,9 @@
+## v0.3.2
+
+* 🐞 update styles here and there
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-border`
+
 ## v0.3.1
 
 * 🐞 fix text colorization in default interface context

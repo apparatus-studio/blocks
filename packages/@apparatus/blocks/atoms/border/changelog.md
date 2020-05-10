@@ -1,3 +1,7 @@
+## v0.3.1
+
+* 🐞 update styles here and there
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/blocks-contexts-theme`, `@apparatus/blocks-contexts-interface`
