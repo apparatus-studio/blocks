@@ -16,6 +16,7 @@ import * as ChatBubble from '@apparatus/blocks-molecules-chat-bubble/meta'
 import * as ContextHeader from '@apparatus/blocks-molecules-context-header/meta'
 import * as Input from '@apparatus/blocks-molecules-input/meta'
 import * as ListOption from '@apparatus/blocks-molecules-list-option/meta'
+import * as StickyButton from '@apparatus/blocks-molecules-sticky-button/meta'
 import * as Text from '@apparatus/blocks-molecules-text/meta'
 import * as Toast from '@apparatus/blocks-molecules-toast/meta'
 import * as Toggle from '@apparatus/blocks-molecules-toggle/meta'
@@ -37,6 +38,7 @@ export const components: TComponents = {
   ContextHeader: () => Promise.resolve(ContextHeader),
   Input: () => Promise.resolve(Input),
   ListOption: () => Promise.resolve(ListOption),
+  StickyButton: () => Promise.resolve(StickyButton),
   Text: () => Promise.resolve(Text),
   Toast: () => Promise.resolve(Toast),
   Toggle: () => Promise.resolve(Toggle),

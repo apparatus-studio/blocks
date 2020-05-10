@@ -17,6 +17,7 @@ export const components: TComponents = {
   ContextHeader: () => import('@apparatus/blocks-molecules-context-header/meta' /* webpackChunkName: "ContextHeader" */),
   Input: () => import('@apparatus/blocks-molecules-input/meta' /* webpackChunkName: "Input" */),
   ListOption: () => import('@apparatus/blocks-molecules-list-option/meta' /* webpackChunkName: "ListOption" */),
+  StickyButton: () => import('@apparatus/blocks-molecules-sticky-button/meta' /* webpackChunkName: "StickyButton" */),
   Text: () => import('@apparatus/blocks-molecules-text/meta' /* webpackChunkName: "Text" */),
   Toast: () => import('@apparatus/blocks-molecules-toast/meta' /* webpackChunkName: "Toast" */),
   Toggle: () => import('@apparatus/blocks-molecules-toggle/meta' /* webpackChunkName: "Toggle" */),
