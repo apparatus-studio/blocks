@@ -54,7 +54,7 @@ export const themeText = ({
     isInteractive !== undefined && isInteractive,
     COLOR_ACCENT_PRIMARY,
     true,
-    COLOR_LIGHT_DETAILS
+    COLOR_ACCENT_PRIMARY
   ),
   fontFamily: elegir(
     level === TEXT_LEVEL_PRIMARY_TITLE,
