@@ -10,9 +10,10 @@
     "build/"
   ],
   "dependencies": {
+    "@apparatus/blocks-utils-platform": "^0.1.0",
     "@primitives/view": "^1.0.0",
-    "react": "16.11.0",
     "elegir": "^1.0.0",
+    "react": "16.11.0",
     "refun": "^2.0.0"
   },
   "sideEffects": false

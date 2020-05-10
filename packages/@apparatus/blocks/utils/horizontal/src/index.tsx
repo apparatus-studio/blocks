@@ -2,20 +2,31 @@ import React, { ReactNode } from 'react'
 import { elegir } from 'elegir'
 import { component, startWithType } from 'refun'
 import { View } from '@primitives/view'
+import { platformSelect } from '@apparatus/blocks-utils-platform'
 
 export type THorizontal = {
-  height?: number | string,
-  width?: number | string,
-  shouldGrow?: boolean,
-  hAlign?: 'start' | 'center' | 'end',
-  vAlign?: 'start' | 'center',
-  spaceBetween?: boolean,
   children: ReactNode,
+  hAlign?: 'start' | 'center' | 'end',
+  height?: number | string,
+  shouldGrow?: boolean,
+  spaceBetween?: boolean,
+  translateX?: number,
+  vAlign?: 'start' | 'center',
+  width?: number | string,
 }
 
 export const Horizontal = component(
   startWithType<THorizontal>()
-)(({ children, vAlign, height, hAlign, shouldGrow, width, spaceBetween }) => (
+)(({
+  children,
+  hAlign,
+  height,
+  shouldGrow,
+  spaceBetween,
+  translateX,
+  vAlign,
+  width,
+}) => (
   <View
     role="horizontal"
     style={{
@@ -52,6 +63,14 @@ export const Horizontal = component(
             vAlign === 'center',
             'center'
           ),
+        }
+        : {},
+      ...translateX !== undefined
+        ? {
+          transform: platformSelect({
+            web: `translateX(${translateX}px)`,
+            native: [{ translateX }] as unknown as string,
+          }),
         }
         : {},
     }}
