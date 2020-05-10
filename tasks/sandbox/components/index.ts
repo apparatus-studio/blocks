@@ -18,6 +18,7 @@ export const components: TComponents = {
   Input: () => import('@apparatus/blocks-molecules-input/meta' /* webpackChunkName: "Input" */),
   ListOption: () => import('@apparatus/blocks-molecules-list-option/meta' /* webpackChunkName: "ListOption" */),
   StickyButton: () => import('@apparatus/blocks-molecules-sticky-button/meta' /* webpackChunkName: "StickyButton" */),
+  TabSelector: () => import('@apparatus/blocks-molecules-tab-selector/meta' /* webpackChunkName: "TabSelector" */),
   Text: () => import('@apparatus/blocks-molecules-text/meta' /* webpackChunkName: "Text" */),
   Toast: () => import('@apparatus/blocks-molecules-toast/meta' /* webpackChunkName: "Toast" */),
   Toggle: () => import('@apparatus/blocks-molecules-toggle/meta' /* webpackChunkName: "Toggle" */),
