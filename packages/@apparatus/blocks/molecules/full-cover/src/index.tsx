@@ -23,7 +23,10 @@ export const FullCover = component(
     width={parentWidth}
   >
     <AtomBackground multiplier={0}/>
-    <Vertical>
+    <Vertical
+      height={parentHeight}
+      width={parentWidth}
+    >
       {children}
     </Vertical>
   </Vertical>
