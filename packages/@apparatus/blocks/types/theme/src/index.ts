@@ -23,9 +23,9 @@ export type TComponentProps = {
   image: {},
   spacer: {
     Container: TAtomContainer,
-    Footprint: TAtomFootprint & { interfaceContext: TInterfaceContexts },
-    Spacer: TAtomSpacer & { interfaceContext: TInterfaceContexts },
-    Spacer_Input: TAtomInput & { interfaceContext: TInterfaceContexts },
+    Footprint: TAtomFootprint,
+    Spacer: TAtomSpacer,
+    Spacer_Input: TAtomInput,
   },
   text: {
     Text: TAtomText & { interfaceContext: TInterfaceContexts },
@@ -46,9 +46,9 @@ export type TTheme = {
   image: {},
   spacer: {
     Container: TThemeSpacer<TAtomContainer>,
-    Footprint: TThemeSpacer<TAtomFootprint & { interfaceContext: TInterfaceContexts }>,
-    Spacer: TThemeSpacer<TAtomSpacer & { interfaceContext: TInterfaceContexts }>,
-    Spacer_Input: TThemeSpacer<TAtomInput & { interfaceContext: TInterfaceContexts }>,
+    Footprint: TThemeSpacer<TAtomFootprint>,
+    Spacer: TThemeSpacer<TAtomSpacer>,
+    Spacer_Input: TThemeSpacer<TAtomInput>,
   },
   text: {
     Text: TThemeText<TAtomText & { interfaceContext: TInterfaceContexts }>,
