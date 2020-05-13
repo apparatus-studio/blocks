@@ -12,7 +12,11 @@ export const MainScrollable = component(
   startWithType<TMainScrollable>(),
   mapContext(ContextParentSize)
 )(({ children, multiplier }) => (
-  <AtomContainer multiplier={multiplier}>
+  <AtomContainer
+    multiplier={multiplier}
+    shouldExpandVertically
+    shouldScroll
+  >
     {children}
   </AtomContainer>
 ))
