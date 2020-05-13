@@ -11,6 +11,7 @@ import { TAtomInput } from '@apparatus/blocks-atoms-input'
 import { TAtomText } from '@apparatus/blocks-atoms-text'
 import { TAtomSpacer } from '@apparatus/blocks-atoms-spacer'
 import { TInterfaceContexts } from '@apparatus/blocks-particles-interface-contexts'
+import { TAtomContainer } from '@apparatus/blocks-atoms-container'
 
 export type TComponentProps = {
   background: {
@@ -21,6 +22,7 @@ export type TComponentProps = {
   },
   image: {},
   spacer: {
+    Container: TAtomContainer,
     Footprint: TAtomFootprint & { interfaceContext: TInterfaceContexts },
     Spacer: TAtomSpacer & { interfaceContext: TInterfaceContexts },
     Spacer_Input: TAtomInput & { interfaceContext: TInterfaceContexts },
@@ -43,6 +45,7 @@ export type TTheme = {
   },
   image: {},
   spacer: {
+    Container: TThemeSpacer<TAtomContainer>,
     Footprint: TThemeSpacer<TAtomFootprint & { interfaceContext: TInterfaceContexts }>,
     Spacer: TThemeSpacer<TAtomSpacer & { interfaceContext: TInterfaceContexts }>,
     Spacer_Input: TThemeSpacer<TAtomInput & { interfaceContext: TInterfaceContexts }>,

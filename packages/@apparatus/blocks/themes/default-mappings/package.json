@@ -12,6 +12,7 @@
   "dependencies": {
     "@apparatus/blocks-atoms-background": "^0.3.0",
     "@apparatus/blocks-atoms-border": "^0.3.1",
+    "@apparatus/blocks-atoms-container": "^0.3.0",
     "@apparatus/blocks-atoms-footprint": "^0.3.0",
     "@apparatus/blocks-atoms-icon": "^0.3.0",
     "@apparatus/blocks-atoms-input": "^0.3.0",
@@ -27,12 +28,12 @@
     "@fantasy-color/map-color-space-polynomial": "^1.0.0",
     "@fantasy-color/rgb-to-lab": "^1.0.0",
     "@fantasy-color/types": "^1.0.0",
-    "@themeables/background": "*",
-    "@themeables/border": "*",
+    "@themeables/background": "^2.0.0",
+    "@themeables/border": "^2.0.0",
     "@themeables/spacer": "^0.2.0",
-    "@themeables/text": "*",
-    "@themeables/vector-shape": "*",
-    "colorido": "*",
+    "@themeables/text": "^2.0.0",
+    "@themeables/vector-shape": "^2.0.0",
+    "colorido": "^1.0.1",
     "elegir": "^1.0.0"
   },
   "sideEffects": false

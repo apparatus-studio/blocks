@@ -4,6 +4,7 @@ import { themeBorder } from './themeBorder'
 import { themeFootprint } from './themeFootprint'
 import { themeText_Input } from './themeText_Input'
 import { themeText } from './themeText'
+import { themeContainer } from './themeContainer'
 import { themeSpacer_Input } from './themeSpacer_Input'
 import { themeSpacer } from './themeSpacer'
 import { themeIcon } from './themeIcon'
@@ -17,6 +18,7 @@ export const Theme: TTheme = {
   },
   image: {},
   spacer: {
+    Container: themeContainer,
     Footprint: themeFootprint,
     Spacer: themeSpacer,
     Spacer_Input: themeSpacer_Input,
