@@ -21,7 +21,7 @@
     "@apparatus/blocks-utils-vertical": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "@primitives/view": "^1.0.0",
-    "refun": "^1.0.1"
+    "refun": "^2.0.0"
   },
   "devDependencies": {
     "@apparatus/blocks-molecules-list-option": "^0.5.0",

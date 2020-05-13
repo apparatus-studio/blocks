@@ -20,7 +20,7 @@
     "@apparatus/blocks-utils-vertical": "^0.2.0",
     "@primitives/button": "^2.0.0",
     "react": "16.11.0",
-    "refun": "^1.0.1",
+    "refun": "^2.0.0",
     "tsfn": "^1.1.1"
   },
   "devDependencies": {

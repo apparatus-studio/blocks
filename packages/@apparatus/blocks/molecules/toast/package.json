@@ -22,7 +22,7 @@
     "@apparatus/blocks-utils-horizontal": "^0.2.0",
     "@apparatus/blocks-utils-vertical": "^0.2.0",
     "react": "16.11.0",
-    "refun": "^1.0.1"
+    "refun": "^2.0.0"
   },
   "devDependencies": {
     "autoprops": "^1.0.2"
