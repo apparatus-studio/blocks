@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/blocks-atoms-spacer": "^0.4.0",
-    "@apparatus/blocks-molecules-button-icon": "^0.5.0",
+    "@apparatus/blocks-molecules-button-icon": "^0.5.1",
     "@apparatus/blocks-molecules-text": "^0.4.0",
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
