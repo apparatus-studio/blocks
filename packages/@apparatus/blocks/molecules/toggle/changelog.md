@@ -1,3 +1,7 @@
+## v0.4.0
+
+* undefined update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-spacer`
+
 ## v0.3.0
 
 * undefined update dependencies `@apparatus/blocks-utils-vertical`, `@apparatus/blocks-utils-horizontal`

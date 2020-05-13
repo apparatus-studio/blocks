@@ -1,3 +1,9 @@
+## v0.4.0
+
+* 🐞 cleanup
+
+* undefined update dependencies `@apparatus/blocks-contexts-theme`
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/blocks-contexts-interface`, `@apparatus/blocks-contexts-theme`

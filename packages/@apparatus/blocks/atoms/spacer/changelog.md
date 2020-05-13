@@ -1,3 +1,11 @@
+## v0.4.0
+
+* 🌱 support 0 multipliers
+
+* 🐞 cleanup
+
+* undefined update dependencies `@apparatus/blocks-contexts-theme`
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/blocks-contexts-theme`, `@apparatus/blocks-contexts-interface`

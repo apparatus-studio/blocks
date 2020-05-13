@@ -1,3 +1,7 @@
+## v0.5.0
+
+* undefined update dependencies `@apparatus/blocks-atoms-icon`
+
 ## v0.4.0
 
 * undefined update dependencies `@apparatus/blocks-utils-horizontal`
