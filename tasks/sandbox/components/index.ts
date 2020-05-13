@@ -19,6 +19,7 @@ export const components: TComponents = {
   FullCover: () => import('@apparatus/blocks-molecules-full-cover/meta' /* webpackChunkName: "FullCover" */),
   Input: () => import('@apparatus/blocks-molecules-input/meta' /* webpackChunkName: "Input" */),
   ListOption: () => import('@apparatus/blocks-molecules-list-option/meta' /* webpackChunkName: "ListOption" */),
+  MainScrollable: () => import('@apparatus/blocks-molecules-main-scrollable/meta' /* webpackChunkName: "MainScrollable" */),
   SideNavigation: () => import('@apparatus/blocks-molecules-side-navigation/meta' /* webpackChunkName: "SideNavigation" */),
   StickyButton: () => import('@apparatus/blocks-molecules-sticky-button/meta' /* webpackChunkName: "StickyButton" */),
   TabSelector: () => import('@apparatus/blocks-molecules-tab-selector/meta' /* webpackChunkName: "TabSelector" */),
