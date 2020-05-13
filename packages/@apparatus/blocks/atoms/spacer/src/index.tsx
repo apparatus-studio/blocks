@@ -7,7 +7,7 @@ import { ContextDebug } from '@apparatus/blocks-contexts-debug'
 import { ContextInterface } from '@apparatus/blocks-contexts-interface'
 
 export type TAtomSpacer = {
-  multiplier: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+  multiplier: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
 }
 
 export const Spacer = component(
