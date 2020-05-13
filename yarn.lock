@@ -2249,7 +2249,7 @@
     chalk "^4.0.0"
     stack-utils "^2.0.1"
 
-"@themeables/background@*", "@themeables/background@^2.0.0":
+"@themeables/background@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@themeables/background/-/background-2.0.0.tgz#72e56a791c9fe81edf036cf55a0c82e2749acfdf"
   integrity sha512-k/n7qkhe6YddRm0tUHdcWS1Vhk5ZJOhRTpq8V1nsqLhTq1TcPlNI7hWmdjmzwHqQKwHx/G8MwElwCF/5jCCeKQ==
@@ -2258,7 +2258,7 @@
     "@themeables/core" "^2.0.0"
     colorido "^1.0.0"
 
-"@themeables/border@*", "@themeables/border@^2.0.0":
+"@themeables/border@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@themeables/border/-/border-2.0.0.tgz#85421ed2736deb068393ef73cbcdf1dc66be7a8d"
   integrity sha512-9ZyxMRWS/lVXxgkziExNHkYKZArkS7vk2aJXJaTP3CtWe14WPn6iOF1YWNQgjqawkjmc7v81rIXcX9CWIzswnA==
@@ -2291,7 +2291,7 @@
     "@babel/runtime" "^7.1.2"
     "@themeables/core" "^2.0.0"
 
-"@themeables/text@*", "@themeables/text@^2.0.0":
+"@themeables/text@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@themeables/text/-/text-2.0.0.tgz#594fb93bf113381abd62d083c563f04467db11a0"
   integrity sha512-41Sk6de+Ou83ho8dgLAXhUymYucI7wcFU1ZGb0VpCfQfuKxP4aDY059F3+ZWj1vvnjL7TcpKYQzg7D4v+pi/7w==
@@ -2302,7 +2302,7 @@
     colorido "^1.0.0"
     stili "^2.0.0"
 
-"@themeables/vector-shape@*", "@themeables/vector-shape@^2.0.0":
+"@themeables/vector-shape@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@themeables/vector-shape/-/vector-shape-2.0.0.tgz#42b276c7bc89000ecb0aac5612795464023d31da"
   integrity sha512-glU17yUSp+YOTOJ8HdFih+vklPiH09Fp1ENV/fi9rR1y8yFb4kn3yH7PiW0FcY+333D+Y3G/dVOxR0g3vgv1yQ==
