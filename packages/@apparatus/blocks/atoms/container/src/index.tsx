@@ -13,6 +13,8 @@ import { ScrollVertical } from '@apparatus/blocks-utils-scroll-vertical'
 export type TAtomContainer = {
   children: ReactNode,
   multiplier: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+  shouldExpandVertically?: boolean,
+  shouldScroll?: boolean,
 }
 
 export const Spacer = component(
@@ -31,7 +33,12 @@ export const Spacer = component(
   />
 ))
 
-type TContainer = TThemeableSpacer & { children: ReactNode }
+type TContainer = TThemeableSpacer
+& {
+  children: ReactNode,
+  shouldExpandVertically?: boolean,
+  shouldScroll?: boolean,
+}
 
 export const Container = component(
   startWithType<TContainer>(),
@@ -42,42 +49,79 @@ export const Container = component(
   inlineStart,
   parentHeight,
   parentWidth,
+  shouldExpandVertically,
+  shouldScroll,
 }) => (
   <Vertical
-    height={parentHeight}
+    height={shouldExpandVertically !== undefined && shouldExpandVertically ? parentHeight : undefined}
     width={parentWidth}
   >
-    <ScrollVertical
-      height={parentHeight}
-      width={parentWidth}
-    >
-      <Spacer
-        blockStart={blockStart}
-        inlineStart={blockStart}
-      />
-      <Horizontal
-        width={parentWidth}
-        vAlign="center"
-      >
-        <Spacer
-          blockStart={inlineStart}
-          inlineStart={inlineStart}
-        />
-        <Vertical
-          width={parentWidth - ((inlineStart ?? 0) * 2)}
-        >
-          {children}
-        </Vertical>
-        <Spacer
-          blockStart={inlineStart}
-          inlineStart={inlineStart}
-        />
-      </Horizontal>
-      <Spacer
-        blockStart={blockStart}
-        inlineStart={blockStart}
-      />
-    </ScrollVertical>
+    {
+      shouldScroll !== undefined && shouldScroll
+        ? (
+          <ScrollVertical
+            height={(shouldExpandVertically !== undefined && shouldExpandVertically) ? parentHeight : undefined}
+            width={parentWidth}
+          >
+            <Spacer
+              blockStart={blockStart}
+              inlineStart={blockStart}
+            />
+            <Horizontal
+              width={parentWidth}
+              vAlign="center"
+            >
+              <Spacer
+                blockStart={inlineStart}
+                inlineStart={inlineStart}
+              />
+              <Vertical
+                width={parentWidth - ((inlineStart ?? 0) * 2)}
+              >
+                {children}
+              </Vertical>
+              <Spacer
+                blockStart={inlineStart}
+                inlineStart={inlineStart}
+              />
+            </Horizontal>
+            <Spacer
+              blockStart={blockStart}
+              inlineStart={blockStart}
+            />
+          </ScrollVertical>
+        )
+        : (
+          <>
+            <Spacer
+              blockStart={blockStart}
+              inlineStart={blockStart}
+            />
+            <Horizontal
+              width={parentWidth}
+              vAlign="center"
+            >
+              <Spacer
+                blockStart={inlineStart}
+                inlineStart={inlineStart}
+              />
+              <Vertical
+                width={parentWidth - ((inlineStart ?? 0) * 2)}
+              >
+                {children}
+              </Vertical>
+              <Spacer
+                blockStart={inlineStart}
+                inlineStart={inlineStart}
+              />
+            </Horizontal>
+            <Spacer
+              blockStart={blockStart}
+              inlineStart={blockStart}
+            />
+          </>
+        )
+    }
   </Vertical>
 ))
 
