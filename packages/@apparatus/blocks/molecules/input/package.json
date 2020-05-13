@@ -10,12 +10,12 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-atoms-background": "^0.3.0",
-    "@apparatus/blocks-atoms-border": "^0.3.1",
-    "@apparatus/blocks-atoms-icon": "^0.3.0",
-    "@apparatus/blocks-atoms-input": "^0.3.0",
-    "@apparatus/blocks-atoms-spacer": "^0.3.0",
-    "@apparatus/blocks-molecules-text": "^0.3.0",
+    "@apparatus/blocks-atoms-background": "^0.4.0",
+    "@apparatus/blocks-atoms-border": "^0.4.0",
+    "@apparatus/blocks-atoms-icon": "^0.4.0",
+    "@apparatus/blocks-atoms-input": "^0.4.0",
+    "@apparatus/blocks-atoms-spacer": "^0.4.0",
+    "@apparatus/blocks-molecules-text": "^0.4.0",
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@apparatus/blocks-utils-horizontal": "^0.2.0",

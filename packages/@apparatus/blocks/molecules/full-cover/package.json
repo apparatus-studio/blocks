@@ -10,14 +10,14 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-atoms-background": "^0.3.0",
+    "@apparatus/blocks-atoms-background": "^0.4.0",
     "@apparatus/blocks-contexts-parent-size": "^0.1.0",
     "@apparatus/blocks-utils-vertical": "^0.2.0",
     "refun": "^2.0.0"
   },
   "devDependencies": {
     "@apparatus/blocks-contexts-parent-size": "^0.1.0",
-    "@apparatus/blocks-molecules-text": "^0.3.0",
+    "@apparatus/blocks-molecules-text": "^0.4.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@types/react": "^16.9.0",
     "autoprops": "^1.0.0",

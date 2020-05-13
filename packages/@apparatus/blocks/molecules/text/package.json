@@ -10,8 +10,8 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-atoms-footprint": "^0.3.0",
-    "@apparatus/blocks-atoms-text": "^0.3.0",
+    "@apparatus/blocks-atoms-footprint": "^0.4.0",
+    "@apparatus/blocks-atoms-text": "^0.4.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@babel/runtime": "^7.1.2",
     "@primitives/background": "^2.0.0",

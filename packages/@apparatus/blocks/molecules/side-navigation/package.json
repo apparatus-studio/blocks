@@ -18,8 +18,8 @@
   "devDependencies": {
     "@apparatus/blocks-contexts-interface": "^0.2.0",
     "@apparatus/blocks-contexts-parent-size": "^0.1.0",
-    "@apparatus/blocks-molecules-full-cover": "^0.1.1",
-    "@apparatus/blocks-molecules-text": "^0.3.0",
+    "@apparatus/blocks-molecules-full-cover": "^0.2.0",
+    "@apparatus/blocks-molecules-text": "^0.4.0",
     "@apparatus/blocks-particles-interface-contexts": "^0.2.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@types/react": "^16.9.0",
