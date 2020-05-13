@@ -1776,11 +1776,12 @@
     stili "^2.0.0"
     tsfn "^1.1.0"
 
-"@primitives/input@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@primitives/input/-/input-2.0.0.tgz#6ec6d128998dbfa78607c68226bb9ef453edf142"
-  integrity sha512-JdvdLs3OYAniSaBOtpXQh1lG40fAHskNFE5MUiGDZDLbljvo4+osAeWBZggJ177TuufGR3xwVNOElRWWB5XCkg==
+"@primitives/input@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@primitives/input/-/input-3.0.0.tgz#f8c1425d27e05ec670937239876e50ca174fae24"
+  integrity sha512-zN4jyfs/NK9DNUP7M4ZLA05PiMgoWvbEAH3Rng5MbNyoKLHTjv3HvGb6yuxQShAWVwgGoKUdA3hXVynCuqwR/A==
   dependencies:
+    "@themeables/spacer" "^0.2.0"
     "@themeables/text" "^2.0.0"
     colorido "^1.0.0"
     refun "^2.0.0"
