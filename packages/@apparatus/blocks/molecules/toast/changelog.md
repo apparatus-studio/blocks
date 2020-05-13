@@ -1,3 +1,7 @@
+## v0.3.1
+
+* 🐞 fix refun dependency
+
 ## v0.3.0
 
 * undefined update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-spacer`

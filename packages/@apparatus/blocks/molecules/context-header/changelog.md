@@ -1,3 +1,9 @@
+## v0.3.1
+
+* 🐞 fix refun dependency
+
+* undefined update dependencies `@apparatus/blocks-molecules-button-icon`
+
 ## v0.3.0
 
 * undefined update dependencies `@apparatus/blocks-molecules-text`, `@apparatus/blocks-molecules-button-icon`, `@apparatus/blocks-atoms-spacer`
