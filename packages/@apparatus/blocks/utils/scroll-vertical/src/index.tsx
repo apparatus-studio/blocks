@@ -2,8 +2,8 @@ import React, { FC, ReactNode } from 'react'
 
 export type TScrollVertical = {
   children: ReactNode,
-  height: number,
-  width: number,
+  height?: number,
+  width?: number,
 }
 
 export const ScrollVertical: FC<TScrollVertical> = ({
