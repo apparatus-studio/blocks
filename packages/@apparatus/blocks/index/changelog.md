@@ -1,3 +1,9 @@
+## v0.8.0
+
+* 🌱 expose scrollable utils
+
+* ♻️ update dependencies `@apparatus/blocks-utils-scroll-horizontal`
+
 ## v0.7.0
 
 * 🌱 expose bottom molecule
