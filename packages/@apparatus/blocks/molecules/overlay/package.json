@@ -1,0 +1,29 @@
+{
+  "name": "@apparatus/blocks-molecules-overlay",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/blocks-contexts-parent-size": "^0.1.0",
+    "@primitives/button": "^2.0.0",
+    "@primitives/view": "^1.0.0",
+    "refun": "^2.0.0"
+  },
+  "devDependencies": {
+    "@apparatus/blocks-contexts-parent-size": "^0.1.0",
+    "@apparatus/blocks-molecules-bottom": "^0.1.0",
+    "@apparatus/blocks-molecules-full-cover": "^0.3.0",
+    "@apparatus/blocks-molecules-text": "^0.5.0",
+    "@apparatus/blocks-particles-text-levels": "^0.1.0",
+    "@types/react": "^16.9.0",
+    "autoprops": "^1.0.0",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}

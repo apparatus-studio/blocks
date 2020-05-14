@@ -20,6 +20,7 @@ import * as FullCover from '@apparatus/blocks-molecules-full-cover/meta'
 import * as Input from '@apparatus/blocks-molecules-input/meta'
 import * as ListOption from '@apparatus/blocks-molecules-list-option/meta'
 import * as MainScrollable from '@apparatus/blocks-molecules-main-scrollable/meta'
+import * as Overlay from '@apparatus/blocks-molecules-overlay/meta'
 import * as SideNavigation from '@apparatus/blocks-molecules-side-navigation/meta'
 import * as StickyButton from '@apparatus/blocks-molecules-sticky-button/meta'
 import * as TabSelector from '@apparatus/blocks-molecules-tab-selector/meta'
@@ -49,6 +50,7 @@ export const components: TComponents = {
   Input: () => Promise.resolve(Input),
   ListOption: () => Promise.resolve(ListOption),
   MainScrollable: () => Promise.resolve(MainScrollable),
+  Overlay: () => Promise.resolve(Overlay),
   SideNavigation: () => Promise.resolve(SideNavigation),
   StickyButton: () => Promise.resolve(StickyButton),
   TabSelector: () => Promise.resolve(TabSelector),
