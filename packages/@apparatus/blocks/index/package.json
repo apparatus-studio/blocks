@@ -53,7 +53,7 @@
     "@apparatus/blocks-utils-animated-background": "^0.1.0",
     "@apparatus/blocks-utils-horizontal": "^0.2.0",
     "@apparatus/blocks-utils-platform": "^0.1.0",
-    "@apparatus/blocks-utils-scroll-horizontal": "^0.0.0",
+    "@apparatus/blocks-utils-scroll-horizontal": "^0.1.0",
     "@apparatus/blocks-utils-scroll-vertical": "^0.1.1",
     "@apparatus/blocks-utils-vertical": "^0.2.0"
   }
