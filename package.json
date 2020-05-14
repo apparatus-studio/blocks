@@ -63,7 +63,8 @@
       "docs": "📝",
       "refactor": "🛠",
       "wip": "🚧",
-      "screenshots": "📸"
+      "screenshots": "📸",
+      "dependencies": "♻️"
     },
     "commit": {
       "major": "Breaking Change",
@@ -76,7 +77,8 @@
       "docs": "Docs",
       "refactor": "Refactor",
       "wip": "Work in progress",
-      "screenshots": "Snapshots / Screenshots"
+      "screenshots": "Snapshots / Screenshots",
+      "dependencies": "Dependencies"
     }
   },
   "eslintConfig": {
