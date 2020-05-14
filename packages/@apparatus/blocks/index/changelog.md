@@ -1,3 +1,9 @@
+## v0.9.0
+
+* 🌱 expose overlay molecule
+
+* ♻️ update dependencies `@apparatus/blocks-molecules-overlay`
+
 ## v0.8.0
 
 * 🌱 expose scrollable utils
