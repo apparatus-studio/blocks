@@ -10,6 +10,7 @@ export const components: TComponents = {
   AtomText: () => import('@apparatus/blocks-atoms-text/meta' /* webpackChunkName: "AtomText" */),
   ContextInterface: () => import('@apparatus/blocks-contexts-interface/meta' /* webpackChunkName: "ContextInterface" */),
   ActionSheet: () => import('@apparatus/blocks-molecules-action-sheet/meta' /* webpackChunkName: "ActionSheet" */),
+  Bottom: () => import('@apparatus/blocks-molecules-bottom/meta' /* webpackChunkName: "Bottom" */),
   Button: () => import('@apparatus/blocks-molecules-button/meta' /* webpackChunkName: "Button" */),
   ButtonIcon: () => import('@apparatus/blocks-molecules-button-icon/meta' /* webpackChunkName: "ButtonIcon" */),
   Card: () => import('@apparatus/blocks-molecules-card/meta' /* webpackChunkName: "Card" */),
