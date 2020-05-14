@@ -1,3 +1,7 @@
+## v0.4.0
+
+* ♻️ update dependencies `@apparatus/blocks-molecules-input`
+
 ## v0.3.1
 
 * 🐞 fix refun dependency

@@ -1,3 +1,7 @@
+## v0.5.0
+
+* ♻️ update dependencies `@apparatus/blocks-contexts-theme`
+
 ## v0.4.0
 
 * 🌱 support 0 multipliers

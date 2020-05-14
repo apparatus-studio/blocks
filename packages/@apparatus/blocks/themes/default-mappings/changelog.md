@@ -1,3 +1,7 @@
+## v0.5.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-container`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-types-theme`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-atoms-input`
+
 ## v0.4.0
 
 * 🌱 support Container atoms

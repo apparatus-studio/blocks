@@ -1,3 +1,7 @@
+## v0.5.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-spacer`
+
 ## v0.4.1
 
 * 🐞 fix refun dependency

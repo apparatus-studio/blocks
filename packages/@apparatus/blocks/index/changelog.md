@@ -1,3 +1,9 @@
+## v0.7.0
+
+* 🌱 expose bottom molecule
+
+* ♻️ update dependencies `@apparatus/blocks-molecules-bottom`, `@apparatus/blocks-molecules-main-scrollable`, `@apparatus/blocks-themes-default-mappings`, `@apparatus/blocks-contexts-theme`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-molecules-input`, `@apparatus/blocks-molecules-date-input`, `@apparatus/blocks-molecules-time-input`, `@apparatus/blocks-molecules-list-option`, `@apparatus/blocks-types-theme`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-molecules-button`, `@apparatus/blocks-molecules-card`, `@apparatus/blocks-molecules-chat-bubble`, `@apparatus/blocks-molecules-context-header`, `@apparatus/blocks-molecules-sticky-button`, `@apparatus/blocks-molecules-tab-selector`, `@apparatus/blocks-molecules-toast`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-molecules-action-sheet`, `@apparatus/blocks-molecules-full-cover`, `@apparatus/blocks-molecules-toggle`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-molecules-button-icon`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-atoms-input`
+
 ## v0.6.1
 
 * 🐞 expose main scrollable

@@ -1,3 +1,7 @@
+## v0.4.0
+
+* ♻️ update dependencies `@apparatus/blocks-molecules-text`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-spacer`
+
 ## v0.3.1
 
 * 🐞 fix refun dependency

@@ -1,3 +1,7 @@
+## v0.6.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-icon`
+
 ## v0.5.1
 
 * 🐞 fix refun dependency
