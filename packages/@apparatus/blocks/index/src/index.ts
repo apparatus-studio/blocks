@@ -15,6 +15,7 @@ export * from '@apparatus/blocks-data-transform-input'
 export * from '@apparatus/blocks-data-validation'
 
 export * from '@apparatus/blocks-molecules-action-sheet'
+export * from '@apparatus/blocks-molecules-bottom'
 export * from '@apparatus/blocks-molecules-button'
 export * from '@apparatus/blocks-molecules-button-icon'
 export * from '@apparatus/blocks-molecules-card'
