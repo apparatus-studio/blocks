@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/blocks-contexts-debug": "^0.1.0",
-    "@apparatus/blocks-contexts-theme": "^0.5.0",
+    "@apparatus/blocks-contexts-theme": "^0.6.0",
     "@babel/runtime": "^7.1.2",
     "@primitives/view": "^1.0.0",
     "@themeables/spacer": "^0.2.0",
