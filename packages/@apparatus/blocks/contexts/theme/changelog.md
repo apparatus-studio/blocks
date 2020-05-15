@@ -1,3 +1,9 @@
+## v0.6.0
+
+* 🌱 support creating theme from tokens
+
+* ♻️ update dependencies `@apparatus/blocks-types-theme`, `@apparatus/blocks-themes-default-mappings`, `@apparatus/blocks-themes-default-tokens`
+
 ## v0.5.0
 
 * ♻️ update dependencies `@apparatus/blocks-themes-default-mappings`, `@apparatus/blocks-types-theme`

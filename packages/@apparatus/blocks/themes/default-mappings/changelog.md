@@ -1,3 +1,9 @@
+## v0.6.0
+
+* 🌱 support creating theme from tokens
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-types-theme`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-container`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-input`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-themes-default-tokens`
+
 ## v0.5.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-container`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-types-theme`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-atoms-input`
