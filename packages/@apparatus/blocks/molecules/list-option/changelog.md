@@ -1,3 +1,7 @@
+## v0.7.1
+
+* 🐞 correct spacings
+
 ## v0.7.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-atoms-spacer`
