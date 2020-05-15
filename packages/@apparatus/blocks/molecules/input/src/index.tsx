@@ -57,7 +57,7 @@ export const Input = component(
     <Horizontal vAlign="center">
       <AtomSpacer multiplier={5}/>
       <Vertical hAlign="center">
-        <AtomSpacer multiplier={5}/>
+        <AtomSpacer multiplier={4}/>
         <Horizontal vAlign="center">
           {icon !== undefined && (
             <>
@@ -76,7 +76,7 @@ export const Input = component(
             <AtomSpacer multiplier={1}/>
           </Vertical>
         </Horizontal>
-        <AtomSpacer multiplier={5}/>
+        <AtomSpacer multiplier={4}/>
       </Vertical>
       <AtomSpacer multiplier={5}/>
     </Horizontal>

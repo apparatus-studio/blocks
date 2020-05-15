@@ -30,7 +30,7 @@ export const ListOption = component(
     <Horizontal vAlign="center" shouldGrow>
       <AtomBorder hasTop={!isFirst} multiplier={0} size={1}/>
       <Vertical hAlign="center" shouldGrow>
-        <AtomSpacer multiplier={5}/>
+        <AtomSpacer multiplier={4}/>
         <Horizontal width="100%">
           <Vertical hAlign="start" shouldGrow>
             <Vertical hAlign="center">
@@ -55,7 +55,7 @@ export const ListOption = component(
             <AtomIcon isInteractive name={ICON_NAMES_ARROW_RIGHT}/>
           </Horizontal>
         </Horizontal>
-        <AtomSpacer multiplier={5}/>
+        <AtomSpacer multiplier={4}/>
       </Vertical>
     </Horizontal>
   </Button>

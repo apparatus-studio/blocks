@@ -73,7 +73,7 @@ export const Button = component(
           isPressed={isPressed}
         />
         <Horizontal hAlign="center" vAlign="center">
-          <AtomSpacer multiplier={4}/>
+          <AtomSpacer multiplier={5}/>
           <Vertical hAlign="center" vAlign="center">
             <AtomSpacer multiplier={4}/>
             <Horizontal vAlign="center">
@@ -98,7 +98,7 @@ export const Button = component(
             </Horizontal>
             <AtomSpacer multiplier={4}/>
           </Vertical>
-          <AtomSpacer multiplier={4}/>
+          <AtomSpacer multiplier={5}/>
         </Horizontal>
       </Horizontal>
     </PrimitiveButton>
