@@ -1,49 +1,79 @@
-import React, { FC } from 'react'
+import React, { useState, ReactElement, useEffect, useRef } from 'react'
 import { component, startWithType, mapContext } from 'refun'
+import { View } from '@primitives/view'
 import { Animation, easeInCubic } from '@primitives/animation'
 import { ContextParentSize } from '@apparatus/blocks-contexts-parent-size'
 import { Horizontal } from '@apparatus/blocks-utils-horizontal'
 
 export type TSideNavigation = {
-  children: FC[],
-  selected: number,
+  Component: () => ReactElement,
 }
 
 export const SideNavigation = component(
   startWithType<TSideNavigation>(),
   mapContext(ContextParentSize)
 )(({
-  children,
+  Component,
   parentHeight,
   parentWidth,
-  selected,
-}) => (
-  <Horizontal
-    hAlign="start"
-    vAlign="start"
-    height={parentHeight}
-    width={parentWidth}
-  >
-    <Animation
-      easing={easeInCubic}
-      time={150}
-      values={[-(parentWidth * selected)]}
+}) => {
+  const ComponentRef = useRef<() => ReactElement>(Component)
+  const NewComponentRef = useRef<() => ReactElement>()
+  const firstTime = useRef(true)
+  const [hasIncoming, setIncoming] = useState(false)
+
+  useEffect(() => {
+    if (!firstTime.current) {
+      NewComponentRef.current = Component
+      setIncoming(true)
+    } else {
+      firstTime.current = false
+    }
+  }, [Component])
+
+  return (
+    <Horizontal
+      hAlign="start"
+      vAlign="start"
+      height={parentHeight}
+      width={parentWidth}
     >
-      {([translateX]) => (
-        <Horizontal
-          hAlign="start"
-          vAlign="start"
-          height={parentHeight}
-          width={parentWidth * children.length}
-          translateX={translateX}
-        >
-          {children.map((Component, index) => (
-            <Component key={index}/>
-          ))}
-        </Horizontal>
-      )}
-    </Animation>
-  </Horizontal>
-))
+      <ComponentRef.current/>
+      <Animation
+        easing={easeInCubic}
+        time={150}
+        values={[hasIncoming ? 0 : parentWidth]}
+        shouldNotAnimate={!hasIncoming}
+        onAnimationEnd={() => {
+          if (NewComponentRef.current !== undefined) {
+            ComponentRef.current = NewComponentRef.current
+          }
+
+          NewComponentRef.current = undefined
+          setIncoming(false)
+        }}
+      >
+        {([xDisplacement]) => (
+          NewComponentRef.current !== undefined
+            ? (
+              <View
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: xDisplacement,
+                  width: parentWidth,
+                  height: parentHeight,
+                }}
+              >
+                <NewComponentRef.current/>
+              </View>
+            )
+            : <View/>
+        )}
+      </Animation>
+    </Horizontal>
+  )
+})
 
 SideNavigation.displayName = 'SideNavigation'
+

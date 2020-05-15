@@ -42,16 +42,13 @@ const Third = () => (
 
 export const config: TComponentConfig<TSideNavigation> = {
   props: {
-    children: [
-      [
-        First,
-        Second,
-        Third,
-      ],
+    Component: [
+      First,
+      Second,
+      Third,
     ],
-    selected: [0, 1, 2],
   },
-  required: ['children', 'selected'],
+  required: ['Component'],
 }
 
 export const Component = (props: TSideNavigation) => (
