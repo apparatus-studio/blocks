@@ -31,30 +31,28 @@ export const TabSelector = component(
         : INTERFACE_CONTEXT_REGULAR
     }
   >
-    <Horizontal>
+    <Vertical>
       <AtomBackground multiplier={3}/>
-      <Vertical hAlign="center">
-        <AtomSpacer multiplier={1}/>
-        <Horizontal>
-          <Horizontal vAlign="center">
-            <AtomSpacer multiplier={1}/>
-            <Horizontal>
-              {options.map((option) => (
-                <TabSelectorOption
-                  key={option.value}
-                  value={option.value}
-                  label={option.label}
-                  isSelected={option.value === value}
-                  onPress={onChange}
-                />
-              ))}
-            </Horizontal>
-            <AtomSpacer multiplier={1}/>
+      <AtomSpacer multiplier={1}/>
+      <Horizontal>
+        <Horizontal vAlign="center">
+          <AtomSpacer multiplier={1}/>
+          <Horizontal>
+            {options.map((option) => (
+              <TabSelectorOption
+                key={option.value}
+                value={option.value}
+                label={option.label}
+                isSelected={option.value === value}
+                onPress={onChange}
+              />
+            ))}
           </Horizontal>
+          <AtomSpacer multiplier={1}/>
         </Horizontal>
-        <AtomSpacer multiplier={1}/>
-      </Vertical>
-    </Horizontal>
+      </Horizontal>
+      <AtomSpacer multiplier={1}/>
+    </Vertical>
   </ContextInterfaceProvider>
 ))
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { TComponentConfig } from 'autoprops'
-import { View } from '@primitives/view'
+import { Horizontal } from '@apparatus/blocks-utils-horizontal'
 import { TabSelector, TTabSelector } from './src'
 
 export const config: TComponentConfig<TTabSelector> = {
@@ -23,9 +23,9 @@ export const config: TComponentConfig<TTabSelector> = {
 }
 
 export const Component = (props: TTabSelector) => (
-  <View style={{ width: 300 }}>
+  <Horizontal width={360}>
     <TabSelector {...props}/>
-  </View>
+  </Horizontal>
 )
 
 export { default as packageJson } from './package.json'

@@ -9,6 +9,7 @@ import { Text } from '@apparatus/blocks-molecules-text'
 import { ContextInterfaceProvider, ContextInterface } from '@apparatus/blocks-contexts-interface'
 import { INTERFACE_CONTEXT_ACCENT } from '@apparatus/blocks-particles-interface-contexts'
 import { TEXT_LEVEL_BODY } from '@apparatus/blocks-particles-text-levels'
+import { View } from '@primitives/view'
 
 export type TTabSelectorOption = {
   isSelected?: boolean,
@@ -40,7 +41,7 @@ export const TabSelectorOption = component(
         : interfaceContext
     }
   >
-    <Button onPress={onPress}>
+    <View style={{ position: 'relative' }}>
       <AtomBackground multiplier={3}/>
       <Vertical hAlign="center">
         <AtomSpacer multiplier={2}/>
@@ -55,7 +56,26 @@ export const TabSelectorOption = component(
         </Horizontal>
         <AtomSpacer multiplier={2}/>
       </Vertical>
-    </Button>
+
+      <View
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+        }}
+      >
+        <Button onPress={onPress}>
+          <View
+            style={{
+              width: '100%',
+              height: '100%',
+            }}
+          />
+        </Button>
+      </View>
+    </View>
   </ContextInterfaceProvider>
 ))
 
