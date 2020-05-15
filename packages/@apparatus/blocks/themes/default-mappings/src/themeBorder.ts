@@ -1,8 +1,12 @@
 import { TThemeableBorder } from '@themeables/border'
 import { TAtomBorder } from '@apparatus/blocks-atoms-border'
-import { COLOR_ACCENT_PRIMARY, COLOR_LIGHT_DETAILS, GRID } from '@apparatus/blocks-themes-default-tokens'
+import { TTokens } from '@apparatus/blocks-themes-default-tokens'
 
 export const themeBorder = ({
+  COLOR_ACCENT_PRIMARY,
+  COLOR_LIGHT_DETAILS,
+  GRID,
+}: TTokens) => ({
   hasBottom,
   hasLeft,
   hasRight,

@@ -6,8 +6,11 @@ import { setupImageTheme } from '@themeables/image'
 import { setupTextTheme } from '@themeables/text'
 import { setupSpacerTheme } from '@themeables/spacer'
 import { setupVectorShapeTheme } from '@themeables/vector-shape'
-import { Theme } from '@apparatus/blocks-themes-default-mappings'
+import * as tokens from '@apparatus/blocks-themes-default-tokens'
+import { createTheme } from '@apparatus/blocks-themes-default-mappings'
 import { TComponentProps, TTheme } from '@apparatus/blocks-types-theme'
+
+const Theme = createTheme(tokens)
 
 export const { BackgroundTheme, createThemeableBackground } = setupBackgroundTheme<TComponentProps['background']>(Theme.background)
 export const { BorderTheme, createThemeableBorder } = setupBorderTheme<TComponentProps['border']>(Theme.border)

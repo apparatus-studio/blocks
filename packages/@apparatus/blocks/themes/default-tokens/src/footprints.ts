@@ -49,3 +49,16 @@ export const FOOTPRINT_EXTRA_LARGE_END = platformSelect({
   web: 6,
   native: 5,
 })
+
+export type TTokenFootprints = {
+  FOOTPRINT_EXTRA_SMALL_START?: number,
+  FOOTPRINT_EXTRA_SMALL_END?: number,
+  FOOTPRINT_SMALL_START?: number,
+  FOOTPRINT_SMALL_END?: number,
+  FOOTPRINT_MEDIUM_START?: number,
+  FOOTPRINT_MEDIUM_END?: number,
+  FOOTPRINT_LARGE_START?: number,
+  FOOTPRINT_LARGE_END?: number,
+  FOOTPRINT_EXTRA_LARGE_START?: number,
+  FOOTPRINT_EXTRA_LARGE_END?: number,
+}

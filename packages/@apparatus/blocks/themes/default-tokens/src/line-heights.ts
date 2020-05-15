@@ -5,3 +5,13 @@ export const LINE_HEIGHT_BODY = 24
 export const LINE_HEIGHT_LABEL = 12
 export const LINE_HEIGHT_ERROR_LABEL = 12
 export const LINE_HEIGHT_SMALL_LABEL = 8
+
+export type TTokenLineHeights = {
+  LINE_HEIGHT_PRIMARY_TITLE: number,
+  LINE_HEIGHT_SECONDARY_TITLE: number,
+  LINE_HEIGHT_TERTIARY_TITLE: number,
+  LINE_HEIGHT_BODY: number,
+  LINE_HEIGHT_LABEL: number,
+  LINE_HEIGHT_ERROR_LABEL: number,
+  LINE_HEIGHT_SMALL_LABEL: number,
+}

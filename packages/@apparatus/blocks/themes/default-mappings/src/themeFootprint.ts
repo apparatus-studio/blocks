@@ -10,7 +10,9 @@ import {
   TEXT_LEVEL_SMALL_LABEL,
   TEXT_LEVEL_BODY,
 } from '@apparatus/blocks-particles-text-levels'
-import {
+import { TTokens } from '@apparatus/blocks-themes-default-tokens'
+
+export const themeFootprint = ({
   FOOTPRINT_EXTRA_LARGE_START,
   FOOTPRINT_LARGE_START,
   FOOTPRINT_MEDIUM_START,
@@ -21,9 +23,7 @@ import {
   FOOTPRINT_SMALL_END,
   FOOTPRINT_EXTRA_SMALL_END,
   FOOTPRINT_EXTRA_SMALL_START,
-} from '@apparatus/blocks-themes-default-tokens'
-
-export const themeFootprint = ({ level }: TAtomFootprint): TThemeableSpacer => ({
+}: TTokens) => ({ level }: TAtomFootprint): TThemeableSpacer => ({
   blockStart: elegir(
     level === TEXT_LEVEL_PRIMARY_TITLE,
     FOOTPRINT_EXTRA_LARGE_START,

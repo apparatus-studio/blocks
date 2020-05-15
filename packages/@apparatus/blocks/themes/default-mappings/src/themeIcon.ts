@@ -23,7 +23,9 @@ import {
   INTERFACE_CONTEXT_SUCCESS,
   TInterfaceContexts,
 } from '@apparatus/blocks-particles-interface-contexts'
-import {
+import { TTokens } from '@apparatus/blocks-themes-default-tokens'
+
+export const themeIcon = ({
   COLOR_ACCENT_PRIMARY,
   COLOR_BACKGROUND_PRIMARY,
   GRID,
@@ -41,9 +43,7 @@ import {
   ICON_CALENDAR,
   ICON_WARNING,
   ICON_PLACEHOLDER,
-} from '@apparatus/blocks-themes-default-tokens'
-
-export const themeIcon = ({ name, isInteractive, interfaceContext }: TAtomIcon & { interfaceContext?: TInterfaceContexts }): TThemeableVectorShape => ({
+}: TTokens) => ({ name, isInteractive, interfaceContext }: TAtomIcon & { interfaceContext?: TInterfaceContexts }): TThemeableVectorShape => ({
   height: GRID * 5,
   width: GRID * 5,
   color: elegir(

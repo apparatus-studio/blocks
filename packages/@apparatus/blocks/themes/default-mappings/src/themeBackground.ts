@@ -9,14 +9,7 @@ import {
   INTERFACE_CONTEXT_SUCCESS,
   TInterfaceContexts,
 } from '@apparatus/blocks-particles-interface-contexts'
-import {
-  COLOR_ACCENT_PRIMARY,
-  COLOR_BACKGROUND_PRIMARY,
-  COLOR_ERROR,
-  COLOR_LIGHT_DETAILS,
-  COLOR_SUCCESS,
-  GRID,
-} from '@apparatus/blocks-themes-default-tokens'
+import { TTokens } from '@apparatus/blocks-themes-default-tokens'
 import { pressed, hovered } from './util/changeColor'
 
 const applyInteractiveState = (color: TColor, isHovered?: boolean, isPressed?: boolean): TColor => (
@@ -31,6 +24,13 @@ const applyInteractiveState = (color: TColor, isHovered?: boolean, isPressed?: b
 )
 
 export const themeBackground = ({
+  COLOR_ACCENT_PRIMARY,
+  COLOR_BACKGROUND_PRIMARY,
+  COLOR_ERROR,
+  COLOR_LIGHT_DETAILS,
+  COLOR_SUCCESS,
+  GRID,
+}: TTokens) => ({
   interfaceContext,
   isHovered,
   isPressed,

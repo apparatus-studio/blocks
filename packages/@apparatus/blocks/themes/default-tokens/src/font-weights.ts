@@ -12,3 +12,8 @@ export const FONT_WEIGHT_BOLD: TThemeableText['fontWeight'] = platformSelect({
   ios: 700,
   android: undefined,
 })
+
+export type TTokenFontWeights = {
+  FONT_WEIGHT_REGULAR: TThemeableText['fontWeight'],
+  FONT_WEIGHT_BOLD: TThemeableText['fontWeight'],
+}

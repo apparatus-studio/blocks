@@ -16,7 +16,9 @@ import {
   INTERFACE_CONTEXT_SUCCESS,
   TInterfaceContexts,
 } from '@apparatus/blocks-particles-interface-contexts'
-import {
+import { TTokens } from '@apparatus/blocks-themes-default-tokens'
+
+export const themeText = ({
   COLOR_BACKGROUND_PRIMARY,
   COLOR_ACCENT_PRIMARY,
   FONT_FAMILY_BOLD,
@@ -35,9 +37,7 @@ import {
   LINE_HEIGHT_TERTIARY_TITLE,
   LINE_HEIGHT_SMALL_LABEL,
   LINE_HEIGHT_ERROR_LABEL,
-} from '@apparatus/blocks-themes-default-tokens'
-
-export const themeText = ({
+}: TTokens) => ({
   level,
   isInteractive,
   isBold,

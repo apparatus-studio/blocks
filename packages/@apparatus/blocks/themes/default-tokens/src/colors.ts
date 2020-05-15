@@ -7,3 +7,13 @@ export const COLOR_DARK_DETAILS: TColor = [0x9B, 0x9B, 0x9B, 1]
 export const COLOR_LIGHT_DETAILS: TColor = [0xE0, 0xE0, 0xE0, 1]
 export const COLOR_SUCCESS: TColor = [0x3A, 0xD2, 0x9F, 1]
 export const COLOR_ERROR: TColor = [0xF5, 0x44, 0x44, 1]
+
+export type TTokenColors = {
+  COLOR_ACCENT_PRIMARY: TColor,
+  COLOR_BACKGROUND_PRIMARY: TColor,
+  COLOR_CONTENT_PRIMARY: TColor,
+  COLOR_DARK_DETAILS: TColor,
+  COLOR_LIGHT_DETAILS: TColor,
+  COLOR_SUCCESS: TColor,
+  COLOR_ERROR: TColor,
+}
