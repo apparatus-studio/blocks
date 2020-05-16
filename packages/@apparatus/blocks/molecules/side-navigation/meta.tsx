@@ -47,6 +47,7 @@ export const config: TComponentConfig<TSideNavigation> = {
       Second,
       Third,
     ],
+    isReversed: [true],
   },
   required: ['Component'],
 }

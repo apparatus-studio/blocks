@@ -1,11 +1,12 @@
 import React, { useState, ReactElement, useEffect, useRef } from 'react'
 import { component, startWithType, mapContext } from 'refun'
-import { View } from '@primitives/view'
 import { Animation, easeInCubic } from '@primitives/animation'
 import { ContextParentSize } from '@apparatus/blocks-contexts-parent-size'
 import { Horizontal } from '@apparatus/blocks-utils-horizontal'
+import { View } from '@apparatus/blocks-utils-view'
 
 export type TSideNavigation = {
+  isReversed?: boolean,
   Component: () => ReactElement,
 }
 
@@ -14,6 +15,7 @@ export const SideNavigation = component(
   mapContext(ContextParentSize)
 )(({
   Component,
+  isReversed,
   parentHeight,
   parentWidth,
 }) => {
@@ -53,17 +55,18 @@ export const SideNavigation = component(
           setIncoming(false)
         }}
       >
-        {([xDisplacement]) => (
+        {([translateX]) => (
           NewComponentRef.current !== undefined
             ? (
               <View
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: xDisplacement,
-                  width: parentWidth,
-                  height: parentHeight,
-                }}
+                left={0}
+                height={parentHeight}
+                isAbsolute
+                top={0}
+                transform={[
+                  { translateX: isReversed !== undefined && isReversed ? -translateX : translateX },
+                ]}
+                width={parentWidth}
               >
                 <NewComponentRef.current/>
               </View>

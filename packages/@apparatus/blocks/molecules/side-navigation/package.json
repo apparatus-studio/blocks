@@ -12,8 +12,8 @@
   "dependencies": {
     "@apparatus/blocks-contexts-parent-size": "^0.1.0",
     "@apparatus/blocks-utils-horizontal": "^0.2.0",
+    "@apparatus/blocks-utils-view": "^0.0.0",
     "@primitives/animation": "^1.0.0",
-    "@primitives/view": "^1.0.0",
     "refun": "^2.0.0"
   },
   "devDependencies": {
