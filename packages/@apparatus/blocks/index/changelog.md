@@ -1,3 +1,7 @@
+## v0.12.0
+
+* ♻️ update dependencies `@apparatus/blocks-molecules-side-navigation`
+
 ## v0.11.0
 
 * ♻️ update dependencies `@apparatus/blocks-molecules-side-navigation`
