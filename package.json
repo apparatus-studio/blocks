@@ -13,9 +13,7 @@
     "packages/@apparatus/blocks/utils/*"
   ],
   "devDependencies": {
-    "@apparatus/blocks-contexts-debug": "*",
-    "@apparatus/blocks-contexts-interface": "*",
-    "@apparatus/blocks-particles-interface-contexts": "*",
+    "@apparatus/blocks-index": "*",
     "@bubble-dev/eslint-config": "^1.1.0",
     "@bubble-dev/start-preset": "^4.0.0",
     "@bubble-dev/typescript-config": "^1.0.1",

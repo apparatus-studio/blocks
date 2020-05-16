@@ -13,8 +13,8 @@ import {
   SizeText,
   SYMBOL_ICON,
   TActionWithPayload,
+  SizeContent,
 } from '@sandbox/ui'
-import { ContextDebugProvider } from '@apparatus/blocks-contexts-debug'
 import { Reducer } from 'redux'
 import {
   component,
@@ -22,30 +22,39 @@ import {
   mapHandlers,
   mapWithProps,
   pureComponent,
+  mapState,
 } from 'refun'
 import { isUndefined } from 'tsfn'
-import { ContextInterfaceProvider } from '@apparatus/blocks-contexts-interface'
 import {
+  ContextDebugProvider,
+  ContextInterfaceProvider,
+  ContextThemeProvider,
+  createTheme,
+  GRID,
+  Input,
   INTERFACE_CONTEXT_REGULAR,
   INTERFACE_CONTEXT_ACCENT,
   INTERFACE_CONTEXT_ERROR,
   INTERFACE_CONTEXT_SUCCESS,
-} from '@apparatus/blocks-particles-interface-contexts'
+  View,
+} from '@apparatus/blocks-index'
 import { components } from './components'
 
 type TInterfaceContextOptions = 'Regular' | 'Accent' | 'Midtone' | 'Success' | 'Error'
 
 // Your action types
 type TChangeDebugAction = TActionWithPayload<'CHANGE_DEBUG', boolean>
+type TChangeGridSize = TActionWithPayload<'CHANGE_GRID_SIZE', number>
 type TChangeInterfaceContext = TActionWithPayload<'CHANGE_INTERFACE_CONTEXT', TInterfaceContextOptions>
 
 // All possible action types
-type TAllActions = TChangeDebugAction | TChangeInterfaceContext
+type TAllActions = TChangeDebugAction | TChangeGridSize | TChangeInterfaceContext
 
 // Your Plugin's store state type
 type TState = {
   shouldDebug: boolean,
   interfaceContext: TInterfaceContextOptions,
+  gridSize: number,
 }
 
 // Reducer for Plugin's store
@@ -54,6 +63,7 @@ const reducer: Reducer<TState, TAllActions> = (state, action) => {
   if (isUndefined(state) || isUndefined(state.shouldDebug)) {
     return {
       ...state,
+      gridSize: GRID,
       shouldDebug: false,
       interfaceContext: 'Regular',
     }
@@ -64,6 +74,12 @@ const reducer: Reducer<TState, TAllActions> = (state, action) => {
       return {
         ...state,
         shouldDebug: action.payload,
+      }
+    }
+    case 'CHANGE_GRID_SIZE': {
+      return {
+        ...state,
+        gridSize: action.payload,
       }
     }
     case 'CHANGE_INTERFACE_CONTEXT': {
@@ -92,15 +108,23 @@ ThemeIcon.componentSymbol = SYMBOL_ICON
 const Popover = component(
   startWithType<{}>(),
   mapStoreState((state) => ({
+    gridSize: state.gridSize,
     interfaceContext: state.interfaceContext,
     shouldDebug: state.shouldDebug,
   }), ['interfaceContext', 'shouldDebug']),
   mapStoreDispatch('dispatch'),
+  mapState('internalGridSize', 'changeInternalGridSize', ({ gridSize }) => `${gridSize}`, ['gridSize']),
   mapHandlers({
     onDebugPress: ({ dispatch }) => (value) => {
       dispatch({
         type: 'CHANGE_DEBUG',
         payload: value === 'enable',
+      })
+    },
+    onGridSizeUpdate: ({ dispatch, internalGridSize }) => () => {
+      dispatch({
+        type: 'CHANGE_GRID_SIZE',
+        payload: parseInt(internalGridSize, 10),
       })
     },
     onInterfacePress: ({ dispatch }) => (value) => {
@@ -145,7 +169,17 @@ const Popover = component(
       },
     ],
   }))
-)(({ interfaceContext, debugOptions, debugValue, onDebugPress, onInterfacePress, interfaceOptions }) => (
+)(({
+  changeInternalGridSize,
+  interfaceContext,
+  interfaceOptions,
+  internalGridSize,
+  debugOptions,
+  debugValue,
+  onDebugPress,
+  onGridSizeUpdate,
+  onInterfacePress,
+}) => (
   <Layout direction="vertical">
     <Layout_Item width={400} height={40}>
       <Label>
@@ -175,12 +209,34 @@ const Popover = component(
         </Layout>
       </Label>
     </Layout_Item>
+
+    <Layout_Item width={400} height={40}>
+      <Label>
+        <Layout spaceBetween={15}>
+          <Layout_Item width={LAYOUT_SIZE_1} vAlign="center">
+            <SizeText>
+              Grid size:
+            </SizeText>
+          </Layout_Item>
+          <Layout_Item width={LAYOUT_SIZE_FIT} vAlign="center">
+            <SizeContent>
+              <View>
+                <Input
+                  value={internalGridSize}
+                  onBlur={onGridSizeUpdate}
+                  onChange={changeInternalGridSize}
+                />
+              </View>
+            </SizeContent>
+          </Layout_Item>
+        </Layout>
+      </Label>
+    </Layout_Item>
   </Layout>
 ))
 
 Popover.componentSymbol = Symbol('PLUGIN_POPOVER')
 
-// Provider for Bubble-UI component
 type TProvider = {
   Component: FC,
   props: any,
@@ -188,11 +244,19 @@ type TProvider = {
 
 const Provider = pureComponent(
   startWithType<TProvider>(),
-  mapStoreState((state) => ({
-    interfaceContext: state.interfaceContext,
-    shouldDebug: state.shouldDebug,
-  }), ['interfaceContext', 'shouldDebug'])
-)(({ Component, props, shouldDebug, interfaceContext }) => (
+  mapStoreState(
+    (state) => ({
+      interfaceContext: state.interfaceContext,
+      gridSize: state.gridSize,
+      shouldDebug: state.shouldDebug,
+    }),
+    [
+      'gridSize',
+      'interfaceContext',
+      'shouldDebug',
+    ]
+  )
+)(({ Component, gridSize, props, shouldDebug, interfaceContext }) => (
   <ContextInterfaceProvider
     interfaceContext={
       elegir(
@@ -207,15 +271,21 @@ const Provider = pureComponent(
       )
     }
   >
-    {
-      shouldDebug ? (
-        <ContextDebugProvider
-          shouldDebug={shouldDebug}
-        >
-          <Component {...props}/>
-        </ContextDebugProvider>
-      ) : <Component {...props}/>
-    }
+    <ContextThemeProvider
+      theme={createTheme({
+        GRID: gridSize,
+      })}
+    >
+      {
+        shouldDebug ? (
+          <ContextDebugProvider
+            shouldDebug={shouldDebug}
+          >
+            <Component {...props}/>
+          </ContextDebugProvider>
+        ) : <Component {...props}/>
+      }
+    </ContextThemeProvider>
   </ContextInterfaceProvider>
 ))
 
