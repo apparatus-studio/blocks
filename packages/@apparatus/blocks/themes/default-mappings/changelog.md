@@ -1,3 +1,9 @@
+## v0.7.0
+
+* 🌱 allow partial theme overrides
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-types-theme`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-input`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-container`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`
+
 ## v0.6.0
 
 * 🌱 support creating theme from tokens

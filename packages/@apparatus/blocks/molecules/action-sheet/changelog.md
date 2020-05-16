@@ -1,3 +1,7 @@
+## v0.6.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-spacer`
+
 ## v0.5.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-themes-default-tokens`

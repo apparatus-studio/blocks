@@ -1,3 +1,9 @@
+## v0.7.0
+
+* 🐞 rename unified provider
+
+* ♻️ update dependencies `@apparatus/blocks-themes-default-mappings`, `@apparatus/blocks-types-theme`
+
 ## v0.6.0
 
 * 🌱 support creating theme from tokens
