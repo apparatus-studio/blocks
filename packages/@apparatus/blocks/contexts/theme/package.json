@@ -12,9 +12,9 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-themes-default-mappings": "^0.6.0",
+    "@apparatus/blocks-themes-default-mappings": "^0.7.0",
     "@apparatus/blocks-themes-default-tokens": "^0.2.0",
-    "@apparatus/blocks-types-theme": "^0.6.0",
+    "@apparatus/blocks-types-theme": "^0.7.0",
     "@themeables/background": "^2.0.0",
     "@themeables/border": "^2.0.0",
     "@themeables/image": "^2.0.0",
