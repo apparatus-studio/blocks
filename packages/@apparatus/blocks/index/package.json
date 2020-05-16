@@ -37,7 +37,7 @@
     "@apparatus/blocks-molecules-list-option": "^0.7.1",
     "@apparatus/blocks-molecules-main-scrollable": "^0.3.0",
     "@apparatus/blocks-molecules-overlay": "^0.1.0",
-    "@apparatus/blocks-molecules-side-navigation": "^0.2.0",
+    "@apparatus/blocks-molecules-side-navigation": "^0.3.0",
     "@apparatus/blocks-molecules-sticky-button": "^0.5.0",
     "@apparatus/blocks-molecules-tab-selector": "^0.5.1",
     "@apparatus/blocks-molecules-text": "^0.6.0",
