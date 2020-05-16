@@ -32,12 +32,12 @@ export const ContextTheme = createContext<TTheme>({
   spacer: Theme.spacer,
 })
 
-export type TCombinedContextTheme = {
+export type TContextThemeProvider = {
   theme: TTheme,
 }
 
-export const CombinedContextTheme = component(
-  startWithType<TCombinedContextTheme>()
+export const ContextThemeProvider = component(
+  startWithType<TContextThemeProvider>()
 )(
   ({
     children,
