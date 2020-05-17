@@ -28,6 +28,7 @@ import { TTokens } from '@apparatus/blocks-themes-default-tokens'
 export const themeIcon = ({
   COLOR_ACCENT_PRIMARY,
   COLOR_BACKGROUND_PRIMARY,
+  COLOR_CONTENT_PRIMARY,
   GRID,
   ICON_ARROW_LEFT,
   ICON_CLOSE,
@@ -56,7 +57,7 @@ export const themeIcon = ({
     isInteractive !== undefined && isInteractive,
     COLOR_ACCENT_PRIMARY,
     true,
-    COLOR_ACCENT_PRIMARY
+    COLOR_CONTENT_PRIMARY
   ),
   path: elegir(
     name === ICON_NAMES_ARROW_DOWN,

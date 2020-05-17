@@ -21,6 +21,7 @@ import { TTokens } from '@apparatus/blocks-themes-default-tokens'
 export const themeText = ({
   COLOR_BACKGROUND_PRIMARY,
   COLOR_ACCENT_PRIMARY,
+  COLOR_CONTENT_PRIMARY,
   FONT_FAMILY_BOLD,
   FONT_FAMILY_REGULAR,
   FONT_SIZE_EXTRA_SMALL,
@@ -53,7 +54,7 @@ export const themeText = ({
     isInteractive !== undefined && isInteractive,
     COLOR_ACCENT_PRIMARY,
     true,
-    COLOR_ACCENT_PRIMARY
+    COLOR_CONTENT_PRIMARY
   ),
   fontFamily: elegir(
     level === TEXT_LEVEL_PRIMARY_TITLE,
