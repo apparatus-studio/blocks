@@ -1,3 +1,9 @@
+## v0.7.1
+
+* 🐞 main content color fixed
+
+* ♻️ update dependencies `@apparatus/blocks-themes-default-tokens`
+
 ## v0.7.0
 
 * 🌱 allow partial theme overrides
