@@ -16,7 +16,7 @@
     "@apparatus/blocks-atoms-spacer": "^0.7.0",
     "@apparatus/blocks-contexts-interface": "^0.2.0",
     "@apparatus/blocks-particles-interface-contexts": "^0.2.0",
-    "@apparatus/blocks-themes-default-tokens": "^0.2.0",
+    "@apparatus/blocks-themes-default-tokens": "^0.2.1",
     "@apparatus/blocks-utils-horizontal": "^0.2.0",
     "@apparatus/blocks-utils-vertical": "^0.2.0",
     "@babel/runtime": "^7.1.2",

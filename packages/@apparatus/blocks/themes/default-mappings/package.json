@@ -21,7 +21,7 @@
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-particles-interface-contexts": "^0.2.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
-    "@apparatus/blocks-themes-default-tokens": "^0.2.0",
+    "@apparatus/blocks-themes-default-tokens": "^0.2.1",
     "@apparatus/blocks-types-theme": "^0.7.0",
     "@apparatus/blocks-utils-platform": "^0.1.0",
     "@fantasy-color/lab-to-rgb": "^1.0.0",
