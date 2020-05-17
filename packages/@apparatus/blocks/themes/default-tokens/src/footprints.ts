@@ -32,22 +32,22 @@ export const FOOTPRINT_MEDIUM_END = platformSelect({
 
 export const FOOTPRINT_LARGE_START = platformSelect({
   web: 6,
-  native: 7,
+  native: 6,
 })
 
 export const FOOTPRINT_LARGE_END = platformSelect({
   web: 6,
-  native: 5,
+  native: 6,
 })
 
 export const FOOTPRINT_EXTRA_LARGE_START = platformSelect({
-  web: 6,
-  native: 7,
+  web: 8,
+  native: 6,
 })
 
 export const FOOTPRINT_EXTRA_LARGE_END = platformSelect({
   web: 6,
-  native: 5,
+  native: 8,
 })
 
 export type TTokenFootprints = {
