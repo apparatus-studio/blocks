@@ -1,4 +1,4 @@
-import React, { useState, ReactElement, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, FC } from 'react'
 import { component, startWithType, mapContext } from 'refun'
 import { Animation, easeInCubic } from '@primitives/animation'
 import { ContextParentSize } from '@apparatus/blocks-contexts-parent-size'
@@ -7,7 +7,7 @@ import { View } from '@apparatus/blocks-utils-view'
 
 export type TSideNavigation = {
   isReversed?: boolean,
-  Component: () => ReactElement,
+  Component: FC<any>,
 }
 
 export const SideNavigation = component(
@@ -19,8 +19,8 @@ export const SideNavigation = component(
   parentHeight,
   parentWidth,
 }) => {
-  const ComponentRef = useRef<() => ReactElement>(Component)
-  const NewComponentRef = useRef<() => ReactElement>()
+  const ComponentRef = useRef<FC<any>>(Component)
+  const NewComponentRef = useRef<FC<any>>()
   const firstTime = useRef(true)
   const [hasIncoming, setIncoming] = useState(false)
 
