@@ -1,3 +1,7 @@
+## v0.3.1
+
+* 🐞 types
+
 ## v0.3.0
 
 * 🌱 support isReversed and add speed
