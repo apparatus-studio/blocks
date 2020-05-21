@@ -16,9 +16,12 @@
     "refun": "^2.0.0"
   },
   "devDependencies": {
+    "@apparatus/blocks-atoms-spacer": "^0.7.0",
     "@apparatus/blocks-contexts-parent-size": "^0.1.0",
+    "@apparatus/blocks-molecules-action-sheet": "^0.6.0",
     "@apparatus/blocks-molecules-bottom": "^0.3.0",
     "@apparatus/blocks-molecules-full-cover": "^0.5.0",
+    "@apparatus/blocks-molecules-list-option": "^0.8.0",
     "@apparatus/blocks-molecules-text": "^0.7.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@types/react": "^16.9.0",
