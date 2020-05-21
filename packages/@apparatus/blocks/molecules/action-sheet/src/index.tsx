@@ -4,7 +4,6 @@ import { AtomSpacer } from '@apparatus/blocks-atoms-spacer'
 import { AtomBackground } from '@apparatus/blocks-atoms-background'
 import { Horizontal } from '@apparatus/blocks-utils-horizontal'
 import { Vertical } from '@apparatus/blocks-utils-vertical'
-import { View } from '@primitives/view'
 import { ActionSheetGrip } from './ActionSheetGrip'
 
 export type TActionSheet = {
@@ -19,17 +18,15 @@ export const ActionSheet = component(
       topLeftMultiplier={6}
       topRightMultiplier={6}
     />
-    <Horizontal vAlign="center">
+    <Horizontal vAlign="center" shouldGrow>
       <AtomSpacer multiplier={10}/>
-      <Vertical hAlign="center">
+      <Vertical shouldGrow>
         <AtomSpacer multiplier={4}/>
-        <View style={{ position: 'relative' }}>
+        <Horizontal hAlign="center">
           <ActionSheetGrip/>
-        </View>
+        </Horizontal>
         <AtomSpacer multiplier={10}/>
-        <Vertical>
-          {children}
-        </Vertical>
+        {children}
         <AtomSpacer multiplier={10}/>
       </Vertical>
       <AtomSpacer multiplier={10}/>

@@ -24,6 +24,7 @@ export const ActionSheetGrip = component(
         display: 'flex',
         height: GRID,
         width: GRID * 10,
+        position: 'relative',
       }}
     >
       <AtomBackground multiplier={3}/>
