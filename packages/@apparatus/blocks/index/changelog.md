@@ -1,3 +1,7 @@
+## v0.14.0
+
+* ♻️ update dependencies `@apparatus/blocks-molecules-bottom`, `@apparatus/blocks-types-theme`, `@apparatus/blocks-contexts-theme`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-molecules-action-sheet`, `@apparatus/blocks-molecules-button`, `@apparatus/blocks-molecules-chat-bubble`, `@apparatus/blocks-molecules-card`, `@apparatus/blocks-molecules-input`, `@apparatus/blocks-molecules-date-input`, `@apparatus/blocks-molecules-time-input`, `@apparatus/blocks-molecules-full-cover`, `@apparatus/blocks-molecules-sticky-button`, `@apparatus/blocks-molecules-tab-selector`, `@apparatus/blocks-molecules-toast`, `@apparatus/blocks-molecules-toggle`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-molecules-context-header`, `@apparatus/blocks-molecules-list-option`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-molecules-button-icon`, `@apparatus/blocks-atoms-input`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-molecules-main-scrollable`, `@apparatus/blocks-themes-default-mappings`
+
 ## v0.13.0
 
 * 🌱 update what packages are exposed

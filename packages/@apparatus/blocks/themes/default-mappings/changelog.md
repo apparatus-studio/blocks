@@ -1,3 +1,9 @@
+## v0.8.0
+
+* 🌱 support spacing in main scrollable in a better way
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-container`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-input`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-types-theme`
+
 ## v0.7.1
 
 * 🐞 main content color fixed

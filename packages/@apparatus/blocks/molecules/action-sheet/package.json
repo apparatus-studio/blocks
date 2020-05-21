@@ -1,6 +1,6 @@
 {
   "name": "@apparatus/blocks-molecules-action-sheet",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
