@@ -5,6 +5,10 @@ import { AtomContainer, TAtomContainer } from './src'
 export const config: TComponentConfig<TAtomContainer, 'text'> = {
   props: {
     multiplier: [1, 2, 3],
+    multiplierBottom: [1, 2, 3],
+    multiplierLeft: [1, 2, 3],
+    multiplierRight: [1, 2, 3],
+    multiplierTop: [1, 2, 3],
   },
   children: {
     text: {
@@ -16,7 +20,7 @@ export const config: TComponentConfig<TAtomContainer, 'text'> = {
       },
     },
   },
-  required: ['multiplier', 'text'],
+  required: ['text'],
 }
 
 export const Component = AtomContainer

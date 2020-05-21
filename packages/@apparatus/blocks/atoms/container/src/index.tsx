@@ -9,12 +9,18 @@ import { ContextParentSize } from '@apparatus/blocks-contexts-parent-size'
 import { Vertical } from '@apparatus/blocks-utils-vertical'
 import { Horizontal } from '@apparatus/blocks-utils-horizontal'
 import { ScrollVertical } from '@apparatus/blocks-utils-scroll-vertical'
+import { platformSelect } from '@apparatus/blocks-utils-platform'
 
 export type TAtomContainer = {
   children: ReactNode,
-  multiplier: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+  multiplier?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+  multiplierTop?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+  multiplierLeft?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+  multiplierRight?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
+  multiplierBottom?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,
   shouldExpandVertically?: boolean,
   shouldScroll?: boolean,
+  shouldPadIOS?: boolean,
 }
 
 export const Spacer = component(
@@ -36,6 +42,7 @@ export const Spacer = component(
 type TContainer = TThemeableSpacer
 & {
   children: ReactNode,
+  shouldPadIOS?: boolean,
   shouldExpandVertically?: boolean,
   shouldScroll?: boolean,
 }
@@ -45,11 +52,14 @@ export const Container = component(
   mapContext(ContextParentSize)
 )(({
   blockStart,
+  blockEnd,
   children,
   inlineStart,
+  inlineEnd,
   parentHeight,
   parentWidth,
   shouldExpandVertically,
+  shouldPadIOS,
   shouldScroll,
 }) => (
   <Vertical
@@ -60,9 +70,23 @@ export const Container = component(
       shouldScroll !== undefined && shouldScroll
         ? (
           <ScrollVertical
-            height={(shouldExpandVertically !== undefined && shouldExpandVertically) ? parentHeight : undefined}
+            height={
+              (shouldExpandVertically !== undefined && shouldExpandVertically)
+                ? parentHeight
+                : undefined
+            }
             width={parentWidth}
           >
+            {(shouldPadIOS !== undefined && shouldPadIOS) && platformSelect({
+              web: null,
+              android: null,
+              ios: (
+                <Spacer
+                  blockStart={44}
+                  inlineStart={44}
+                />
+              ),
+            })}
             <Spacer
               blockStart={blockStart}
               inlineStart={blockStart}
@@ -81,18 +105,28 @@ export const Container = component(
                 {children}
               </Vertical>
               <Spacer
-                blockStart={inlineStart}
-                inlineStart={inlineStart}
+                blockStart={inlineEnd}
+                inlineStart={inlineEnd}
               />
             </Horizontal>
             <Spacer
-              blockStart={blockStart}
-              inlineStart={blockStart}
+              blockStart={blockEnd}
+              inlineStart={blockEnd}
             />
           </ScrollVertical>
         )
         : (
           <>
+            {(shouldPadIOS !== undefined && shouldPadIOS) && platformSelect({
+              web: null,
+              android: null,
+              ios: (
+                <Spacer
+                  blockStart={44}
+                  inlineStart={44}
+                />
+              ),
+            })}
             <Spacer
               blockStart={blockStart}
               inlineStart={blockStart}
@@ -111,13 +145,13 @@ export const Container = component(
                 {children}
               </Vertical>
               <Spacer
-                blockStart={inlineStart}
-                inlineStart={inlineStart}
+                blockStart={inlineEnd}
+                inlineStart={inlineEnd}
               />
             </Horizontal>
             <Spacer
-              blockStart={blockStart}
-              inlineStart={blockStart}
+              blockStart={blockEnd}
+              inlineStart={blockEnd}
             />
           </>
         )
