@@ -24,7 +24,7 @@
     "@apparatus/blocks-contexts-theme": "^0.7.0",
     "@apparatus/blocks-data-transform-input": "^0.1.1",
     "@apparatus/blocks-data-validation": "^0.1.1",
-    "@apparatus/blocks-molecules-action-sheet": "^0.6.0",
+    "@apparatus/blocks-molecules-action-sheet": "^0.6.1",
     "@apparatus/blocks-molecules-bottom": "^0.3.0",
     "@apparatus/blocks-molecules-button": "^0.8.0",
     "@apparatus/blocks-molecules-button-icon": "^0.8.0",
