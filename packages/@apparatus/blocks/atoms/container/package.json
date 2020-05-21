@@ -13,7 +13,7 @@
     "@apparatus/blocks-contexts-debug": "^0.1.0",
     "@apparatus/blocks-contexts-interface": "^0.2.0",
     "@apparatus/blocks-contexts-parent-size": "^0.1.0",
-    "@apparatus/blocks-contexts-theme": "^0.7.0",
+    "@apparatus/blocks-contexts-theme": "^0.8.0",
     "@apparatus/blocks-utils-horizontal": "^0.2.0",
     "@apparatus/blocks-utils-platform": "^0.1.0",
     "@apparatus/blocks-utils-scroll-vertical": "^0.1.1",

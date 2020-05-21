@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/blocks-data-validation": "^0.1.1",
-    "@apparatus/blocks-molecules-input": "^0.8.0",
+    "@apparatus/blocks-molecules-input": "^0.9.0",
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@babel/runtime": "^7.1.2",
     "react": "16.11.0",
