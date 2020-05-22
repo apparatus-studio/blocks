@@ -6,6 +6,7 @@ export const config: TComponentConfig<TInput> = {
   props: {
     value: ['Test'],
     placeholder: ['Add base'],
+    shouldUseNumberKeyboard: [true],
     icon: [
       ICON_NAMES_CALENDAR,
     ],

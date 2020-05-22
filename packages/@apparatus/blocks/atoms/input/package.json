@@ -12,8 +12,8 @@
   "dependencies": {
     "@apparatus/blocks-contexts-interface": "^0.2.0",
     "@apparatus/blocks-contexts-theme": "^0.8.0",
+    "@apparatus/blocks-utils-input": "^0.0.0",
     "@babel/runtime": "^7.1.2",
-    "@primitives/input": "^3.0.0",
     "@themeables/spacer": "^0.2.0",
     "@themeables/text": "^2.0.0",
     "refun": "^2.0.0"

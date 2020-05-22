@@ -23,6 +23,7 @@ export type TInput = {
   icon?: TIconNames,
   onChange?: (value: string) => void,
   placeholder?: string,
+  shouldUseNumberKeyboard?: boolean,
 } & TMapFocused
 
 export const Input = component(
@@ -39,6 +40,7 @@ export const Input = component(
   onChange,
   onBlur,
   onFocus,
+  shouldUseNumberKeyboard,
   value,
 }) => (
   <Horizontal shouldGrow>
@@ -97,6 +99,7 @@ export const Input = component(
         hasIcon={icon !== undefined}
         value={value}
         onChange={onChange}
+        shouldUseNumberKeyboard={shouldUseNumberKeyboard}
       />
     </View>
   </Horizontal>

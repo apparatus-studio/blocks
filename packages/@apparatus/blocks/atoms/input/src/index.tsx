@@ -1,7 +1,7 @@
 import { TMapFocused, startWithType, mapContext, component } from 'refun'
-import { Input } from '@primitives/input'
 import { TThemeableSpacer } from '@themeables/spacer'
 import { TThemeableText } from '@themeables/text'
+import { Input } from '@apparatus/blocks-utils-input'
 import { createThemeableSpacer, createThemeableText } from '@apparatus/blocks-contexts-theme'
 import { ContextInterface } from '@apparatus/blocks-contexts-interface'
 
@@ -9,6 +9,7 @@ export type TAtomInput = {
   value: string,
   onChange: (value: string) => void,
   hasIcon?: boolean,
+  shouldUseNumberKeyboard?: boolean,
 } & TMapFocused
 
 export const AtomInput = createThemeableSpacer<TThemeableSpacer>(

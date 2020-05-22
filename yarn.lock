@@ -1802,17 +1802,6 @@
     stili "^2.0.0"
     tsfn "^1.1.0"
 
-"@primitives/input@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@primitives/input/-/input-3.0.0.tgz#f8c1425d27e05ec670937239876e50ca174fae24"
-  integrity sha512-zN4jyfs/NK9DNUP7M4ZLA05PiMgoWvbEAH3Rng5MbNyoKLHTjv3HvGb6yuxQShAWVwgGoKUdA3hXVynCuqwR/A==
-  dependencies:
-    "@themeables/spacer" "^0.2.0"
-    "@themeables/text" "^2.0.0"
-    colorido "^1.0.0"
-    refun "^2.0.0"
-    stili "^2.0.0"
-
 "@primitives/pointer@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@primitives/pointer/-/pointer-2.0.0.tgz#15a241de340f12c17ab4783fb54a5389bcb8fcf2"
@@ -2478,6 +2467,13 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
+"@types/react-native@^0.62.2":
+  version "0.62.10"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.10.tgz#82c481df21db4e7460755dc3fc7091e333a1d2bd"
+  integrity sha512-QR4PGrzZ3IvRIHlScyIPuv2GV8tD/BMICZz514KGvn3KHbh0mLphHHemtHZC1o8u4xM5LxwVpMpMYHQ+ncSfag==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-native@^0.62.7":
   version "0.62.8"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.8.tgz#224602561f75b838ed6e3b5ea37093bb84cffd74"
@@ -2881,6 +2877,27 @@
     react-test-renderer "16.11.0"
     tsfn "^1.1.1"
 
+"@x-ray/snapshots@^1.0.3":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@x-ray/snapshots/-/snapshots-1.0.5.tgz#72bd051cfe8ccc93b61e176d4b388bb60b69cdb0"
+  integrity sha512-/YjR7zjgHDFzBgkoUP27WXYjU8d9NT1dkGRryhnvRv/WOmITVyu9OK9kQ2z6dRmS3ESWai6XZot2s9WEiPqEiA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    "@rebox/web" "^2.1.5"
+    "@x-ray/common-utils" "^1.0.2"
+    "@x-ray/serialize-react-tree" "^1.0.1"
+    "@x-ray/tar-fs" "^1.0.0"
+    "@x-ray/ui" "^1.0.4"
+    "@x-ray/worker-utils" "^1.0.0"
+    diff "^4.0.1"
+    iterama "^0.3.0"
+    make-dir "^3.0.0"
+    p-all "^3.0.0"
+    pkg-dir "^4.2.0"
+    pretty-ms "^6.0.0"
+    rsolve "^0.1.0"
+    tsfn "^1.1.2"
+
 "@x-ray/snapshots@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@x-ray/snapshots/-/snapshots-1.0.4.tgz#d4a0f6edeff26a8e2ebc49099a714adf4d9a4ccf"
@@ -2911,7 +2928,7 @@
     pifs "^1.0.0"
     tsfn "^1.0.0"
 
-"@x-ray/ui@^1.0.2":
+"@x-ray/ui@^1.0.2", "@x-ray/ui@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@x-ray/ui/-/ui-1.0.4.tgz#e4bfc8e24bcd44abda6bc438268734afb127fe37"
   integrity sha512-9OZ/mZOtZl0shAUW5YAGp7kMd24Cz6k1v7ISqcHz3rR72tK1c0nce8oZihcDN1xHzg9ahkInY2rvvt06bm6EHA==
@@ -7860,6 +7877,15 @@ iterama@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/iterama/-/iterama-0.2.2.tgz#573f9f44bcc46c787d3266414ab4994d4ef7ae58"
   integrity sha512-dxS/AZa43icxO3NV7qUOQsCveZ3xr88TMNWoah3DlAvvqujFVBnVsE34TFUvXz3UqsQ0g6biBn0VeEadCvdf2w==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    circularr "^0.2.2"
+    funcom "^0.1.0"
+
+iterama@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/iterama/-/iterama-0.3.0.tgz#814bac0d53920c67db62bd5b4ba5a71cbb22457e"
+  integrity sha512-MErvgynHvKYbExdQsjnJfCJjG5d41bwSDA8WDQ4zySDLqRjIEOP0QjXCikC0/hrUN0Z246SrMUA2gwGK4Pi4uw==
   dependencies:
     "@babel/runtime" "^7.3.1"
     circularr "^0.2.2"
