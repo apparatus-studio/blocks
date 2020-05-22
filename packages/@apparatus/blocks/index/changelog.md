@@ -1,3 +1,7 @@
+## v0.16.0
+
+* ♻️ update dependencies `@apparatus/blocks-molecules-date-input`, `@apparatus/blocks-molecules-time-input`
+
 ## v0.15.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-input`, `@apparatus/blocks-themes-default-mappings`, `@apparatus/blocks-contexts-theme`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-molecules-list-option`, `@apparatus/blocks-types-theme`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-molecules-button`, `@apparatus/blocks-molecules-card`, `@apparatus/blocks-molecules-context-header`, `@apparatus/blocks-molecules-chat-bubble`, `@apparatus/blocks-molecules-sticky-button`, `@apparatus/blocks-molecules-tab-selector`, `@apparatus/blocks-molecules-toast`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-molecules-button-icon`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-molecules-action-sheet`, `@apparatus/blocks-molecules-full-cover`, `@apparatus/blocks-molecules-toggle`, `@apparatus/blocks-molecules-bottom`, `@apparatus/blocks-molecules-main-scrollable`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-molecules-input`, `@apparatus/blocks-molecules-date-input`, `@apparatus/blocks-molecules-time-input`
