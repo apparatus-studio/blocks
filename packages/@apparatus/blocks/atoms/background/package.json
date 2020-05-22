@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/blocks-contexts-interface": "^0.2.0",
-    "@apparatus/blocks-contexts-theme": "^0.8.0",
+    "@apparatus/blocks-contexts-theme": "^0.9.0",
     "@apparatus/blocks-utils-animated-background": "^0.1.0",
     "@babel/runtime": "^7.1.2",
     "refun": "^2.0.0"

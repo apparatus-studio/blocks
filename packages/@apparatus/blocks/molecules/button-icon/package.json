@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-atoms-icon": "^0.8.0",
+    "@apparatus/blocks-atoms-icon": "^0.9.0",
     "@apparatus/blocks-particles-icon-names": "^0.1.0",
     "@apparatus/blocks-utils-horizontal": "^0.2.0",
     "@babel/runtime": "^7.1.2",

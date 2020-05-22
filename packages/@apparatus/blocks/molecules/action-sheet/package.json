@@ -12,8 +12,8 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-atoms-background": "^0.8.0",
-    "@apparatus/blocks-atoms-spacer": "^0.8.0",
+    "@apparatus/blocks-atoms-background": "^0.9.0",
+    "@apparatus/blocks-atoms-spacer": "^0.9.0",
     "@apparatus/blocks-contexts-interface": "^0.2.0",
     "@apparatus/blocks-particles-interface-contexts": "^0.2.0",
     "@apparatus/blocks-themes-default-tokens": "^0.2.1",
@@ -24,8 +24,8 @@
     "refun": "^2.0.0"
   },
   "devDependencies": {
-    "@apparatus/blocks-molecules-list-option": "^0.9.0",
-    "@apparatus/blocks-molecules-text": "^0.8.0",
+    "@apparatus/blocks-molecules-list-option": "^0.10.0",
+    "@apparatus/blocks-molecules-text": "^0.9.0",
     "@apparatus/blocks-particles-text-levels": "^0.1.0",
     "@types/react": "^16.9.0",
     "autoprops": "^1.0.3",
