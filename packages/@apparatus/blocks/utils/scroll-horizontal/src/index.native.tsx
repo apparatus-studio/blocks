@@ -15,6 +15,7 @@ export const ScrollHorizontal: FC<TScrollHorizontal> = ({
   <ScrollView
     horizontal
     style={{ height, width }}
+    showsHorizontalScrollIndicator={false}
   >
     {children}
   </ScrollView>
