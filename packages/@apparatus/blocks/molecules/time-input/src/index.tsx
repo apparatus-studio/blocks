@@ -47,6 +47,7 @@ export const TimeInput = component(
     onBlur={onBlur}
     onChange={setValue}
     placeholder={placeholder}
+    shouldUseNumberKeyboard
     value={internalValue}
   />
 ))

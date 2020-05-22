@@ -39,11 +39,12 @@ export const DateInput = component(
   onBlur,
 }) => (
   <Input
+    icon={ICON_NAMES_CALENDAR}
     onBlur={onBlur}
     onChange={setValue}
     placeholder={placeholder}
+    shouldUseNumberKeyboard
     value={internalValue}
-    icon={ICON_NAMES_CALENDAR}
   />
 ))
 
