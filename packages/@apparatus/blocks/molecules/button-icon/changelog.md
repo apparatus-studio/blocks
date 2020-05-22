@@ -1,3 +1,7 @@
+## v0.10.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-icon`
+
 ## v0.9.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-icon`

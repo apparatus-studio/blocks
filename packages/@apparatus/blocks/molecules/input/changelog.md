@@ -1,3 +1,9 @@
+## v0.10.0
+
+* 🌱 support numeric keyboard
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-input`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-spacer`
+
 ## v0.9.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-background`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-input`, `@apparatus/blocks-atoms-spacer`

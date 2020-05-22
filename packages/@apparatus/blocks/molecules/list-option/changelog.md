@@ -1,3 +1,7 @@
+## v0.10.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-border`, `@apparatus/blocks-molecules-text`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-spacer`
+
 ## v0.9.0
 
 * ♻️ update dependencies `@apparatus/blocks-molecules-text`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-spacer`

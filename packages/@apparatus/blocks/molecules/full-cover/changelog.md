@@ -1,3 +1,7 @@
+## v0.7.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-background`
+
 ## v0.6.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-background`

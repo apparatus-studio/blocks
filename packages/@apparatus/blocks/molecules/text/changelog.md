@@ -1,3 +1,7 @@
+## v0.9.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-text`
+
 ## v0.8.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-text`

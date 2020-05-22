@@ -1,3 +1,9 @@
+## v0.9.0
+
+* 🌱 support numeric keyboard
+
+* ♻️ update dependencies `@apparatus/blocks-contexts-theme`, `@apparatus/blocks-utils-input`
+
 ## v0.8.0
 
 * ♻️ update dependencies `@apparatus/blocks-contexts-theme`

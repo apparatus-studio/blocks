@@ -1,3 +1,7 @@
+## v0.9.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-container`, `@apparatus/blocks-atoms-text`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-input`
+
 ## v0.8.0
 
 * ♻️ update dependencies `@apparatus/blocks-atoms-container`, `@apparatus/blocks-atoms-background`, `@apparatus/blocks-atoms-footprint`, `@apparatus/blocks-atoms-border`, `@apparatus/blocks-atoms-icon`, `@apparatus/blocks-atoms-input`, `@apparatus/blocks-atoms-spacer`, `@apparatus/blocks-atoms-text`

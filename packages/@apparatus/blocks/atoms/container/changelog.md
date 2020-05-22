@@ -1,3 +1,7 @@
+## v0.9.0
+
+* ♻️ update dependencies `@apparatus/blocks-contexts-theme`
+
 ## v0.8.0
 
 * 🌱 support spacing in main scrollable in a better way

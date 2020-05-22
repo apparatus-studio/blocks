@@ -1,3 +1,7 @@
+## v0.9.0
+
+* ♻️ update dependencies `@apparatus/blocks-themes-default-mappings`, `@apparatus/blocks-types-theme`
+
 ## v0.8.0
 
 * ♻️ update dependencies `@apparatus/blocks-types-theme`, `@apparatus/blocks-themes-default-mappings`

@@ -1,3 +1,7 @@
+## v0.6.0
+
+* ♻️ update dependencies `@apparatus/blocks-atoms-container`
+
 ## v0.5.0
 
 * 🌱 support spacing in main scrollable in a better way
