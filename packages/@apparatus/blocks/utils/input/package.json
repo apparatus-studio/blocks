@@ -1,0 +1,28 @@
+{
+  "name": "@apparatus/blocks-utils-input",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/blocks",
+  "license": "MIT",
+  "dependencies": {
+    "@apparatus/blocks-utils-platform": "^0.1.0",
+    "@themeables/spacer": "^0.2.0",
+    "@themeables/text": "^2.0.0",
+    "colorido": "^1.0.0",
+    "refun": "^2.0.0",
+    "stili": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.6",
+    "@types/react-native": "^0.62.2",
+    "@x-ray/common-utils": "^1.0.0",
+    "@x-ray/screenshot-utils": "^1.0.0",
+    "@x-ray/snapshots": "^1.0.3",
+    "autoprops": "^1.0.0",
+    "react": "16.11.0",
+    "react-native": "0.62.2"
+  },
+  "sideEffects": false
+}
