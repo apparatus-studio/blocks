@@ -12,6 +12,7 @@ import {
 } from 'refun'
 import { elegir } from 'elegir'
 import { Button } from '@primitives/button'
+import { View } from '@primitives/view'
 import { Text } from '@apparatus/blocks-molecules-text'
 import { Horizontal } from '@apparatus/blocks-utils-horizontal'
 import { Vertical } from '@apparatus/blocks-utils-vertical'
@@ -57,16 +58,14 @@ export const StickyButton = component(
   onFocus,
   onPress,
 }) => (
-  <Button
-    onPointerEnter={onPointerEnter}
-    onPointerLeave={onPointerLeave}
-    onPress={onPress}
-    onPressIn={onPressIn}
-    onPressOut={onPressOut}
-    onFocus={onFocus}
-    onBlur={onBlur}
+  <View
+    style={{
+      position: 'relative',
+      display: 'flex',
+      flexDirection: 'column',
+    }}
   >
-    <Vertical hAlign="center">
+    <Horizontal hAlign="center">
       <ContextInterfaceProvider
         interfaceContext={elegir(
           interfaceContext === INTERFACE_CONTEXT_ACCENT,
@@ -92,16 +91,43 @@ export const StickyButton = component(
           </Horizontal>
         </Vertical>
       </ContextInterfaceProvider>
+    </Horizontal>
 
-      <AtomSpacer multiplier={4}/>
+    <AtomSpacer multiplier={4}/>
 
-      <Horizontal hAlign="center">
-        <Text level={TEXT_LEVEL_SMALL_LABEL}>
-          {children}
-        </Text>
-      </Horizontal>
-    </Vertical>
-  </Button>
+    <Horizontal hAlign="center">
+      <Text level={TEXT_LEVEL_SMALL_LABEL}>
+        {children}
+      </Text>
+    </Horizontal>
+
+    <View
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+      }}
+    >
+      <Button
+        onPointerEnter={onPointerEnter}
+        onPointerLeave={onPointerLeave}
+        onPress={onPress}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onFocus={onFocus}
+        onBlur={onBlur}
+      >
+        <View
+          style={{
+            width: '100%',
+            height: '100%',
+          }}
+        />
+      </Button>
+    </View>
+  </View>
 ))
 
 StickyButton.displayName = 'StickyButton'
