@@ -10,7 +10,7 @@
     "build/"
   ],
   "devDependencies": {
-    "react-native": "^0.62.0",
+    "react-native": "^0.62.3",
     "@types/react-native": "^0.62.7"
   },
   "sideEffects": false
